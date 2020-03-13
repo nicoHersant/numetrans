@@ -11,4 +11,4 @@ $data = array(
     "bienvenue" => "Bienvenue sur le nouveau site de Numelops !"
 );
 
-echo $twig->render('index.html.twig', $data);
+echo $twig->render('home.html.twig', $data);
