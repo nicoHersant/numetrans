@@ -1,7 +1,8 @@
-<h1>{{ bienvenue }}</h1>
 {% extends "base.html.twig" %}
 
 {% block content %}
     <h1>{{ bienvenue }}</h1>
-    {{ include("block/news-module.html.twig") }}
+    <div style="width: 800px">
+        {{ include("block/news-module.html.twig") }}
+    </div>
 {% endblock %}
