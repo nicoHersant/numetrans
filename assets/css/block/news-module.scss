@@ -1,0 +1,51 @@
+@import "../variables";
+
+#news-module{
+    background-color: $background;
+    padding: 10px 20px;
+    #radio-news-module{
+        input{
+            display: none;
+        }
+        .image-news{
+            height: 100px;
+            width: 100px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            margin: 20px;
+            border: $secondary 2px solid;
+            &:first-of-type{
+                background-image: url("../../medias/block/news-module/news-module-top.jpg");
+            }
+            &:nth-of-type(2){
+                background-image: url("../../medias/block/news-module/news-module-right.jpg");
+            }
+            &:nth-of-type(3){
+                background-image: url("../../medias/block/news-module/news-module-bot.jpg");
+            }
+            &:nth-of-type(4){
+                background-image: url("../../medias/block/news-module/news-module-left.jpg");
+            }
+            &.selected{
+                border: $primary 2px solid;
+            }
+        }
+    }
+
+    textarea{
+        width: calc(100% - 12px);
+        height: 200px;
+        resize: none;
+    }
+    button{
+        background-image: url("../../medias/block/news-module/button.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        width: 88.9px;
+        height: 77px;
+    }
+}
