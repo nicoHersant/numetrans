@@ -8,7 +8,8 @@ $twig = new \Twig\Environment($loader, [
 ]);
 
 $data = array(
-    "bienvenue" => "Bienvenue sur le nouveau site de Numelops !"
+    "bienvenue" => "Bienvenue sur le nouveau site de Numelops !",
+    "page" => "home"
 );
 
 echo $twig->render('page/home.html.twig', $data);
