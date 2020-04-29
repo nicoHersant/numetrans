@@ -1,3 +1,3 @@
 (function() {
-    activeSlider("slider-partenaire", "3", true)
+    activateSlider("slider-home", "3", 7000)
 })();

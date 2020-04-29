@@ -1,12 +1,9 @@
-function activeSlider(name, nb_slides, auto = false){
-    let timing = 0;
-    if (auto){
+function activateSlider(name, nb_slides, auto = false, start = 0){
+    if (auto == false){
         timing = 7000
     }
-
-
     ob = new Swipe(document.getElementById(name), {
-        startSlide: 1,
+        startSlide: start,
         speed: 800,
         auto: timing,
         continuous: true,
