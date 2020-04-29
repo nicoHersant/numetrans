@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="assets/css/page/home.css"/>
+        <script type="text/javascript" src="../assets/js/swipe.js"></script>
+        <title>{% block title %}{% endblock %} - Numetrans</title>
+    {% endblock %}
+</head>
+
+<body>
+{% include 'block/header.html.twig' %}
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+{% include 'block/footer.html.twig' %}
+</body>
+</html>
