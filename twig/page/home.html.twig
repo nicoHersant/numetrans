@@ -12,9 +12,13 @@
     <script type="text/javascript">
       ob = new Swipe(document.getElementById('slider'), {
         startSlide: 1,
-        speed: 300,
-        auto: 4000,
-        continuous: true
+        speed: 800,
+        auto: 7000,
+        continuous: true,
+        disableScroll: false,
+        stopPropagation: false,
+        callback: function(index, elem){},
+        transitionEnd: function(index, elem){}
       });
     </script>
 {% endblock %}
