@@ -2,6 +2,25 @@
 
 {% block content %}
     <h1>{{ bienvenue }}</h1>
+    <div id="slider" class="swipe">
+      <div class="swipe-wrap">
+        <div><img src="../../assets/medias/images/slider/lan1.jpg" alt="première lan numelops 2017" width="600"></div>
+        <div><img src="../../assets/medias/images/slider/lan2.jpg" alt="première lan numelops 2017" width="600"></div>
+        <div><img src="../../assets/medias/images/slider/lan3.jpg" alt="première lan numelops 2017" width="600"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      ob = new Swipe(document.getElementById('slider'), {
+        startSlide: 1,
+        speed: 800,
+        auto: 7000,
+        continuous: true,
+        disableScroll: false,
+        stopPropagation: false,
+        callback: function(index, elem){},
+        transitionEnd: function(index, elem){}
+      });
+    </script>
     <div style="width: 800px">
         {{ include("block/news-module.html.twig") }}
     </div>
