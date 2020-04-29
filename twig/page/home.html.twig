@@ -1,4 +1,7 @@
 <h1>{{ bienvenue }}</h1>
 {% extends "base.html.twig" %}
 
-{{ include("block/news-module.html.twig") }}
+{% block content %}
+    <h1>{{ bienvenue }}</h1>
+    {{ include("block/news-module.html.twig") }}
+{% endblock %}
