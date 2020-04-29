@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="assets/css/block/news-module.css">
-<div id="news-module" class="ta-center">
-    <h2>Créer une news</h2>
+<div id="news-module">
+    <h2 class="ta-center">Créer une news</h2>
     <div>
+        <p>Titre</p>
+        <input type="text" name="title" placeholder="Titre">
         <p>Position de l'image</p>
         <div id="radio-news-module">
             <div>
@@ -21,10 +23,12 @@
     </div>
 
     <div>
-        <textarea name="text-news"></textarea>
+        <p>Description</p>
+        <textarea name="text-news" placeholder="Une description de votre news"></textarea>
     </div>
-    <div>
-        <button></button>
+    <p id="log-news-module"></p>
+    <div class="ta-center">
+        <button id="button-news-module"></button>
     </div>
 </div>
 
