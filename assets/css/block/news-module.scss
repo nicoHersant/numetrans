@@ -59,7 +59,10 @@
         color:red;
     }
 
+    .b-success{
+        border: 1px solid green !important;
+    }
     .b-error{
-        border: 2px solid red;
+        border: 1px solid red !important;
     }
 }

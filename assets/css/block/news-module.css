@@ -53,8 +53,11 @@
 #news-module #log-news-module {
   color: red;
 }
+#news-module .b-success {
+  border: 1px solid green !important;
+}
 #news-module .b-error {
-  border: 2px solid red;
+  border: 1px solid red !important;
 }
 
 /*# sourceMappingURL=news-module.css.map */

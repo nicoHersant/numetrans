@@ -22,22 +22,42 @@
         let text = document.querySelector("textarea[name='text-news']");
         let text_value = text.value;
 
+        let error = 0;
+
         log_news_module.innerHTML = "";
+        title.classList.remove("b-success");
+        text.classList.remove("b-success");
         title.classList.remove("b-error");
         text.classList.remove("b-error");
 
         if ((!title_value || title_value.length === 0 || !title_value.trim()) && (!text_value || text_value.length === 0 || !text_value.trim())){
+
+        }
+        if (!title_value || title_value.length === 0 || !title_value.trim()){
+            error++;
+        }
+        if (!text_value || text_value.length === 0 || !text_value.trim()){
+            error = error + 2;
+        }
+
+        if (error === 1){
+            log_news_module.innerHTML = "Titre manquant.";
+            title.classList.add("b-error");
+            text.classList.add("b-success");
+        }
+        else if(error === 2){
+            log_news_module.innerHTML = "Texte manquant.";
+            title.classList.add("b-success");
+            text.classList.add("b-error");
+        }
+        else if(error === 3){
             log_news_module.innerHTML = "Titre et texte manquants.";
             title.classList.add("b-error");
             text.classList.add("b-error");
         }
-        else if (!title_value || title_value.length === 0 || !title_value.trim()){
-            log_news_module.innerHTML = "Titre manquant.";
-            title.classList.add("b-error");
-        }
-        else if (!text_value || text_value.length === 0 || !text_value.trim()){
-            log_news_module.innerHTML = "Texte manquant.";
-            text.classList.add("b-error");
+        else{
+            title.classList.add("b-success");
+            text.classList.add("b-success");
         }
     });
 })();
