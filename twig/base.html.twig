@@ -16,5 +16,9 @@
     {% block content %}{% endblock %}
 </div>
 {% include 'block/footer.html.twig' %}
+
+{% block javscripts %}
+    <script src="../assets/js/page/{{ page }}.js"></script>
+{% endblock %}
 </body>
 </html>
