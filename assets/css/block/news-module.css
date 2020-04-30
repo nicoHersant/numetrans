@@ -59,5 +59,8 @@
 #news-module .b-error {
   border: 1px solid red !important;
 }
+#news-module .success {
+  color: green !important;
+}
 
 /*# sourceMappingURL=news-module.css.map */
