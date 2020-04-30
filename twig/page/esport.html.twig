@@ -1,6 +1,11 @@
 {% extends "base.html.twig" %}
 
+{% block head %} <link rel="stylesheet" media="screen" type="text/css" href="assets/css/page/esport.css"/>
+    {{  parent() }}
+{% endblock %}
+
 {% block content %}
+
     <h1>{{ title }}</h1>
 
     <div id="slider-esport" class="swipe">
@@ -10,10 +15,10 @@
     </div>
     <div id="team-esport">
         <div class="wrapper">
-            <div class="one"><img src="assets/medias/page/esport/BANNER_tech.jp2" alt="visuel equipe tech" width="100%"></div>
-            <div class="two"><img src="assets/medias/page/esport/BANNER_fs2.jp2" alt="visuel equipe fullspeed" width="100%"></div>
-            <div class="three"><img src="assets/medias/page/esport/BANNER_dirt.jp2" alt="visuel equipe dirt" width="100%"></div>
-            <div class="four ><img src="assets/medias/page/esport/BANNER_aca.jp2" alt="visuel equipe academy" width="100%"></div>
+            <div class="one"><img src="assets/medias/page/esport/BANNER_tech.jpg" alt="visuel equipe tech" width="50%"></div>
+            <div class="two"><img src="assets/medias/page/esport/BANNER_fs2.jpg" alt="visuel equipe fullspeed" width="50%"></div>
+            <div class="three"><img src="assets/medias/page/esport/BANNER_dirt.jpg" alt="visuel equipe dirt" width="50%"></div>
+            <div class="four" ><img src="assets/medias/page/esport/BANNER_aca.jpg" alt="visuel equipe academy" width="50%"></div>
         </div>
 
     </div>
