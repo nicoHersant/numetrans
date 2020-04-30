@@ -8,8 +8,8 @@ $twig = new \Twig\Environment($loader, [
 ]);
 
 $data = array(
-    "title" => "Bienvenue sur le nouveau site de Numelops !",
-    "page" => "home"
+    "title" => "Numelops, construisons ensemble l'Esport de demain",
+    "page" => "esport"
 );
 
-echo $twig->render('page/home.html.twig', $data);
+echo $twig->render('page/esport.html.twig', $data);

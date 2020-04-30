@@ -1,20 +1,21 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h1>{{ bienvenue }}</h1>
+    <h1>{{ title }}</h1>
 
     <div id="slider-asso" class="swipe">
       <div class="swipe-wrap">
-        <div><img src="assets/medias/page/home/lan1.jpg" alt="première lan numelops 2017" width="600"></div>
-        <div><img src="assets/medias/page/home/lan2.jpg" alt="première lan numelops 2017" width="600"></div>
-        <div><img src="assets/medias/page/home/lan3.jpg" alt="première lan numelops 2017" width="600"></div>
+        <div><img src="assets/medias/page/association/team2.jpg" alt="les bénévoles fondateurs" width="100%"></div>
+        <div><img src="assets/medias/page/association/afterwork2.jpg" alt="afterwork au new factory" width="100%"></div>
+        <div><img src="assets/medias/page/association/gaming1.jpg" alt="nomade arcade lors de la spheriz cup" width="100%"></div>
+        <div><img src="assets/medias/page/association/podcave1.jpg" alt="visuel du podcast numelops" width="100%"></div>
       </div>
     </div>
-
 
 {% endblock %}
 
 {% block javascripts %}
+    <script type="text/javascript" src="assets/js/others/swipe.js"></script>
     <script src="assets/js/others/slider.js"></script>
     {{ parent() }}
 {% endblock %}
