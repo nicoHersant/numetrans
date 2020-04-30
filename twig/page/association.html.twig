@@ -1,1 +1,20 @@
 {% extends "base.html.twig" %}
+
+{% block content %}
+    <h1>{{ bienvenue }}</h1>
+
+    <div id="slider-asso" class="swipe">
+      <div class="swipe-wrap">
+        <div><img src="assets/medias/page/home/lan1.jpg" alt="première lan numelops 2017" width="600"></div>
+        <div><img src="assets/medias/page/home/lan2.jpg" alt="première lan numelops 2017" width="600"></div>
+        <div><img src="assets/medias/page/home/lan3.jpg" alt="première lan numelops 2017" width="600"></div>
+      </div>
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="assets/js/others/slider.js"></script>
+    {{ parent() }}
+{% endblock %}
