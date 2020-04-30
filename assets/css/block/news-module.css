@@ -5,7 +5,7 @@
 #news-module #radio-news-module input {
   display: none;
 }
-#news-module #radio-news-module .image-news {
+#news-module #radio-news-module .image-placement {
   height: 100px;
   width: 100px;
   background-repeat: no-repeat;
@@ -14,20 +14,20 @@
   margin: 0 20px 0 0;
   border: #89229b 2px solid;
 }
-#news-module #radio-news-module .image-news:first-of-type {
+#news-module #radio-news-module .image-placement:first-of-type {
   background-image: url("../../medias/block/news-module/news-module-top.jpg");
 }
-#news-module #radio-news-module .image-news:nth-of-type(2) {
+#news-module #radio-news-module .image-placement:nth-of-type(2) {
   background-image: url("../../medias/block/news-module/news-module-right.jpg");
 }
-#news-module #radio-news-module .image-news:nth-of-type(3) {
+#news-module #radio-news-module .image-placement:nth-of-type(3) {
   background-image: url("../../medias/block/news-module/news-module-bot.jpg");
 }
-#news-module #radio-news-module .image-news:nth-of-type(4) {
+#news-module #radio-news-module .image-placement:nth-of-type(4) {
   margin-right: 0;
   background-image: url("../../medias/block/news-module/news-module-left.jpg");
 }
-#news-module #radio-news-module .image-news.selected {
+#news-module #radio-news-module .image-placement.selected {
   border: #f96d00 2px solid;
 }
 #news-module input[type=text], #news-module textarea {
