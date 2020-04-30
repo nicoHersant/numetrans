@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    {%block head %}
-        <link rel="stylesheet" href="home.scss" />
+    {% block head %}
+        <link rel="stylesheet" href="assets/css/general.css"/>
+        <link rel="stylesheet" href="assets/css/page/home.css"/>
         <title>{% block title %}{% endblock %} - Numetrans</title>
     {% endblock %}
 </head>
-<body>
-<div id="content">{% block content %}{ endblock %}</div>
 
+<body>
+{% include 'block/header.html.twig' %}
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+{% include 'block/footer.html.twig' %}
+
+{% block javascripts %}
+    <script src="assets/js/page/{{ page }}.js"></script>
+{% endblock %}
 </body>
 </html>

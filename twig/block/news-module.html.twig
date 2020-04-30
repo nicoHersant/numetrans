@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="assets/css/block/news-module.css">
+<div id="news-module">
+    <h2 class="ta-center">Créer une news</h2>
+    <div>
+        <p>Titre</p>
+        <input type="text" name="title" placeholder="Titre">
+        <p>Position de l'image</p>
+        <div id="radio-news-module">
+            <div>
+                <input type="radio" name="image-news" value="1" checked="checked">
+                <input type="radio" name="image-news" value="2">
+                <input type="radio" name="image-news" value="3">
+                <input type="radio" name="image-news" value="4">
+            </div>
+
+            <div>
+                <div class="image-news selected" data-value="1"></div>
+                <div class="image-news" data-value="2"></div>
+                <div class="image-news" data-value="3"></div>
+                <div class="image-news" data-value="4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p>Description</p>
+        <textarea name="text-news" placeholder="Une description de votre news"></textarea>
+    </div>
+    <p id="log-news-module"></p>
+    <div class="ta-center">
+        <button id="button-news-module"></button>
+    </div>
+</div>
+
+<script src="assets/js/block/news-module.js"></script>

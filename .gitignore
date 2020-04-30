@@ -2,4 +2,5 @@ composer.lock
 vendor
 cache
 .idea
-logs
+logs/access.log
+logs/errors.log

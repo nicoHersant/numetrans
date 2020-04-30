@@ -1,1 +1,23 @@
 {% extends "base.html.twig" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+
+    <div id="slider-home" class="swipe">
+      <div class="swipe-wrap">
+        <div><img src="assets/medias/page/home/lan1.jpg" alt="première lan numelops 2017" width="100%"></div>
+        <div><img src="assets/medias/page/home/lan2.jpg" alt="première lan numelops 2017" width="100%"></div>
+        <div><img src="assets/medias/page/home/lan3.jpg" alt="première lan numelops 2017" width="100%"></div>
+      </div>
+    </div>
+
+    <div style="width: 800px">
+        {{ include("block/news-module.html.twig") }}
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="assets/js/others/swipe.js"></script>
+    <script src="assets/js/others/slider.js"></script>
+    {{ parent() }}
+{% endblock %}
