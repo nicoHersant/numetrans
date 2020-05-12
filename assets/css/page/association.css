@@ -7,8 +7,8 @@
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  background: linear-gradient(180deg, #0D0E14 0%, rgba(196, 196, 196, 0) 100%);
   border-radius: 51px;
+  background: linear-gradient(180deg, #0D0E14 55%, #707070 90%);
 }
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -17,6 +17,16 @@
 /* Add some padding inside the card's containers */
 .container {
   padding: .5rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.container > h4 {
+  color: rgb(249, 109, 0);
 }
 .card > img {
   width: 100%;
