@@ -1,8 +1,8 @@
 {% extends "base.html.twig" %}
 
 {% block head %}
-    <link rel="stylesheet" media="screen" type="text/css" href="assets/css/page/association.css"/>
     {{  parent() }}
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/css/page/association.css"/>
 {% endblock %}
 
 {% block content %}
@@ -45,19 +45,34 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="content-one subcontent">
-        <img class="sub-one" src="assets/medias/block/content/fsl_logo_100px.jpg" alt="logo FullSpeed League">
-        <img class="sub-two" src="assets/medias/block/content/num_logo_100px.png" alt="logo FullSpeed League">
+    <div class="content asso-legal">
+      <div class="content-one ">
+        <h4 class="sub-one" >Bulletin d'adhésion</h4>
+        <a class="sub-two" href="assets/medias/page/association/Bulletin_dadhesion.pdf" target="_blanc"><img class="" src="assets/medias/block/content/num_logo_100px.png" alt="lien vers le Bulletin d'adhésion" title="lien vers le Bulletin d'adhésion"></a>
       </div>
-      <div class="content-two">
-        <img class="sub-two" src="assets/medias/block/content/fsl_match2.jpeg" alt="logo FullSpeed League">
+      <div class="content-two ">
+        <h4 class="sub-one" >Statuts de l'Association</h4>
+        <a class="sub-two" href="assets/medias/page/association/Statuts-de-lassociation-Numelops.pdf" target="_blanc"><img class="" src="assets/medias/block/content/num_logo_100px.png" alt="lien vers les Statuts de l'Association" title="lien vers les Statuts de l'Association"></a>
       </div>
       <div class="content-three ">
-        <h4 class="sub-one" >Rejoignez notre Discord</h4>
-        <a class="sub-two" href="https://discord.gg/bt7JMq"><img class="" src="assets/medias/block/content/discord_logo.png" alt="logo FullSpeed League"></a>
+        <h4 class="sub-one" >Réglement intérieur</h4>
+        <a class="sub-two" href="assets/medias/page/association/Règlement_Intérieur_Numelops.pdf" target="_blanc"><img class="" src="assets/medias/block/content/num_logo_100px.png" alt="lien vers le réglement intérieur" title="lien vers le réglement intérieur"></a>
       </div>
     </div>
+
+    <div class="content">
+      <div class="content-one">
+        <img class="sub-one" src="assets/medias/block/content/fsl_logo_100px.jpg" alt="logo FullSpeed League" title="FullSpeed League">
+      </div>
+      <div class="content-two">
+        <img class="sub-two" src="assets/medias/block/content/fsl_match2.jpeg" alt="résumé d'un match FSL 2020" title="#NumWin">
+      </div>
+      <div class="content-three ">
+        <h4 class="sub-one">Rejoignez notre Discord</h4>
+        <a class="sub-two" href="https://discord.gg/bt7JMq"><img class="" src="assets/medias/block/content/discord_logo.png" alt="logo Discord" title="Lien d'invitation vers notre discord"></a>
+      </div>
+    </div>
+
 
 
   </div>
