@@ -1,3 +1,4 @@
+
 (function() {
     const news_module = document.querySelectorAll(".image-placement");
     var image_news = document.querySelector("input[name='image-placement']:checked").value;
