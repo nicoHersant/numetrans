@@ -1,3 +1,4 @@
 (function() {
-    activateSlider("slider-esport", 7000, 0)
+    activateSlider("slider-esport",true)
 })();
+

@@ -1,3 +1,4 @@
+
 (function() {
     const news_module = document.querySelectorAll(".image-placement");
     var image_news = document.querySelector("input[name='image-placement']:checked").value;
@@ -22,6 +23,7 @@
         let title_value = title.value;
         let image = document.querySelector("input[name='image']");
         let image_value = image.value;
+        let placement_value = document.querySelector("input[name='image-placement']").value;
         let text = document.querySelector("textarea[name='description']");
         let text_value = text.value;
 
@@ -31,6 +33,7 @@
         let image_text_error = "";
 
         log_news_module.innerHTML = "";
+        log_news_module.classList.remove("success");
         title.classList.remove("b-success");
         text.classList.remove("b-success");
         title.classList.remove("b-error");
@@ -86,7 +89,22 @@
         log_news_module.innerHTML = text_error;
 
         if (error.length === 0){
-            document.querySelector("#form-news-module").submit();
+            let httpRequest = new XMLHttpRequest();
+            httpRequest.open('POST', "ajax/news-module.php");
+            let formData = new FormData(document.querySelector('#form-news-module'));
+
+            httpRequest.onreadystatechange = function() {
+                if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                    let response = JSON.parse(this.response);
+                    if (response){
+                        log_news_module.innerHTML = response.info;
+                        if (response.success){
+                            log_news_module.classList.add("success");
+                        }
+                    }
+                }
+            };
+            httpRequest.send(formData);
         }
     });
 })();
