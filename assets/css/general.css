@@ -52,7 +52,6 @@ body .ta-center {
   max-height: 80%;
 }
 .content-three {  grid-column: 3;  grid-row: 1;   max-height: 80%;}
-/************* content ******************/
 .subcontent{
   display: grid;
   grid-gap: 1%;
