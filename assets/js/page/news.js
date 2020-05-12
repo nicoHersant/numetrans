@@ -1,3 +1,3 @@
 (function() {
-    activateSlider("slider-news")
+    activateSlider("slider-news", 5000, 0)
 })();
