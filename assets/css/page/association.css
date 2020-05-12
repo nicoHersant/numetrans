@@ -24,11 +24,12 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+  height: inherit;
 }
-.container > h4 {
+.container h4 {
   color: rgb(249, 109, 0);
 }
-.card > img {
+.card img {
   width: 100%;
   border-radius: 51px 51px 0px 0px;
 }
@@ -37,11 +38,16 @@
 .asso-wrapper {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-gap: 30px;
+  grid-gap: 50px;
   grid-auto-rows: minmax(100px, auto);
   grid-auto-rows: minmax(10px, auto);
-  margin:  50px ;
+  margin: 50px 70px 50px 70px;
   pading: 10px;
+}
+.asso-card a {
+  color: #6495ED;
+  text-decoration: none;
+  vertical-align: bottom;
 }
 .asso-one {
   grid-column: 1;
