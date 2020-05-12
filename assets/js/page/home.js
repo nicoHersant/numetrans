@@ -1,3 +1,3 @@
 (function() {
-    activateSlider("slider-home", 5000, 0)
+    activateSlider("slider-home", true)
 })();

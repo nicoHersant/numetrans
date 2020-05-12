@@ -1,7 +1,9 @@
-function activateSlider(name, auto = 7000, start = 0){
-
+function activeSlider(name, auto = false){
+    if (auto == false){
+        auto = 7000
+    }
     ob = new Swipe(document.getElementById(name), {
-        startSlide: start,
+        startSlide: 0,
         speed: 800,
         auto: auto,
         continuous: true,
@@ -10,4 +12,6 @@ function activateSlider(name, auto = 7000, start = 0){
         callback: function(index, elem){},
         transitionEnd: function(index, elem){}
     });
+
+    return ob;
 }

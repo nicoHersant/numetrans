@@ -4,7 +4,8 @@
 <head>
     {% block head %}
         <link rel="stylesheet" href="assets/css/general.css"/>
-        <link rel="stylesheet" href="assets/css/page/home.css"/>
+        <link rel="stylesheet" href="assets/css/page/{{ page }}.css"/>
+        <script type="text/javascript" src="assets/js/swipe.js"></script>
         <title>{% block title %}{% endblock %} - Numetrans</title>
     {% endblock %}
 </head>
