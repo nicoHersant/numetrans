@@ -1,1 +1,69 @@
+
+/***************** card items *********************/
+.card {
+  /* general properties */
+  width: 100%;
+  border-radius: 5px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: linear-gradient(180deg, #0D0E14 0%, rgba(196, 196, 196, 0) 100%);
+  border-radius: 51px;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card's containers */
+.container {
+  padding: .5rem;
+}
+.card > img {
+  width: 100%;
+  border-radius: 51px 51px 0px 0px;
+}
+
+/************* display grid ******************/
+.asso-wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(10px, auto);
+  margin:  50px ;
+  pading: 10px;
+}
+.asso-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.asso-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.asso-three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* No CSS *//*# sourceMappingURL=association.css.map */

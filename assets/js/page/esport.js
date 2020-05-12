@@ -1,3 +1,3 @@
 (function() {
-    activateSlider("slider-esport", "1", 7000)
+    activateSlider("slider-esport", 7000, 0)
 })();

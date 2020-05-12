@@ -1,5 +1,23 @@
-git add body .ta-center {
+body .ta-center {
   text-align: center;
 }
+#content{
+  padding: 15px;
+}
 
+/* general properties for all sliders */
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width: 100%;
+  position: relative;
+}
 /*# sourceMappingURL=general.css.map */

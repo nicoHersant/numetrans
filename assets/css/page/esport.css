@@ -4,22 +4,18 @@
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-
 .one {
   grid-column: 1;
   grid-row: 1;
 }
-
 .two {
   grid-column: 2;
   grid-row: 1;
 }
-
 .three {
   grid-column: 1;
   grid-row: 2;
 }
-
 .four {
   grid-column: 2;
   grid-row: 2;

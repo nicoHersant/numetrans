@@ -1,16 +1,51 @@
 {% extends "base.html.twig" %}
 
-{% block content %}
-    <h1>{{ title }}</h1>
+{% block head %}
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/css/page/association.css"/>
+    {{  parent() }}
+{% endblock %}
 
-    <div id="slider-asso" class="swipe">
-      <div class="swipe-wrap">
-        <div><img src="assets/medias/page/association/team2.jpg" alt="les bénévoles fondateurs" width="100%"></div>
-        <div><img src="assets/medias/page/association/afterwork2.jpg" alt="afterwork au new factory" width="100%"></div>
-        <div><img src="assets/medias/page/association/gaming1.jpg" alt="nomade arcade lors de la spheriz cup" width="100%"></div>
-        <div><img src="assets/medias/page/association/podcave1.jpg" alt="visuel du podcast numelops" width="100%"></div>
-      </div>
+{% block content %}
+  <h1>{{ title }}</h1>
+
+  <div id="slider-asso" class="swipe">
+    <div class="swipe-wrap">
+      <div><img src="assets/medias/page/association/afterwork2.jpg" alt="afterwork au new factory" width="100%"></div>
+      <div><img src="assets/medias/page/association/gaming1.jpg" alt="nomade arcade lors de la spheriz cup" width="100%"></div>
+      <div><img src="assets/medias/page/association/podcave1.jpg" alt="visuel du podcast numelops" width="100%"></div>
     </div>
+  </div>
+
+  <div id="association">
+    <div class="asso-wrapper">
+
+      <div class="card asso-card asso-one">
+        <img src="assets/medias/page/association/fsl20_cashprice.png" alt="annonce du cash price de la FSL 2020" >
+        <div class="container">
+          <h4><b>150 euros de CashPrice !</b></h4>
+          <p>La FSL 2020 organisée par Numelops en remplacement de la Gamers Assembly aura un Cash de 150€ fournit par l'association.</p>
+        </div>
+      </div>
+
+      <div class="card asso-card asso-two">
+        <img src="assets/medias/page/association/numelops_lu.png" alt="principales équipes de Trackmania" >
+        <div class="container">
+          <h4><b>Nos équipes professionnelles Trackmania</b></h4>
+          <p>L'écurie Numelops se compose désormais de trois équipes professionnelles, toutes composées de champions.</p>
+        </div>
+      </div>
+
+      <div class="card asso-card asso-three">
+        <img src="assets/medias/page/association/numelops_lu.png" alt="skin 2019" >
+        <div class="container">
+          <h4><b>Le dernier skin Numelops</b></h4>
+          <p>Le skin officiel des équipe Numelops, réalisé par un artiste indépendant, UnknownGuy.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
 {% endblock %}
 

@@ -1,7 +1,5 @@
-function activateSlider(name, nb_slides, auto = false, start = 0){
-    if (auto == false){
-        auto = 7000
-    }
+function activateSlider(name, auto = 7000, start = 0){
+
     ob = new Swipe(document.getElementById(name), {
         startSlide: start,
         speed: 800,
