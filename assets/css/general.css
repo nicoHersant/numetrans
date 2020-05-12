@@ -1,8 +1,21 @@
 body .ta-center {
   text-align: center;
 }
+h1{
+  text-align: center;
+  color: rgb(249, 109, 0);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 42px;
+}
 #content{
   padding: 15px;
+}
+.topnav-right {
+  float: right;
+}
+.header{
+  margin: 15px 10px 0px 0px;
 }
 
 /* general properties for all sliders */
