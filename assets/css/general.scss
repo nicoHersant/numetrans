@@ -1,15 +1,16 @@
-/* variables */
+@import "variables";
+
 /* main code */
-body {
-  margin: 0;
-}
-body .ta-center {
-  text-align: center;
+body{
+    margin: 0;
+    .ta-center{
+        text-align: center;
+    }
 }
 
-h1 {
+h1{
   text-align: center;
-  color: #f96d00;
+  color: rgb(249, 109, 0);
   font-family: Roboto;
   font-weight: bold;
   font-size: 42px;
@@ -18,8 +19,7 @@ h1 {
 .topnav-right {
   float: right;
 }
-
-.header {
+.header{
   margin: 15px 10px 0px 0px;
 }
 
@@ -29,83 +29,88 @@ h1 {
   visibility: hidden;
   position: relative;
 }
-
 .swipe-wrap {
   overflow: hidden;
   position: relative;
 }
-
 .swipe-wrap div {
-  float: left;
+  float:left;
   width: 100%;
   position: relative;
 }
 
 /* general properties for all 3-parts content div */
-.content {
+.content{
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 33% 33% 33%;
   margin: 5% 10% 5% 10%;
+
   width: auto;
   height: 150px;
-  background-image: linear-gradient(to right, #0D0E14, #FF8A00);
+  background-image:linear-gradient(to right, #0D0E14, #FF8A00);
   border-radius: 30px;
   color: white;
   vertical-align: middle;
   text-align: center;
 }
-
 .content-one {
   vertical-align: sub;
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1;  grid-row: 1;
   border-right-style: solid;
   border-width: 3px;
-  border-color: #FFFFFF;
+  border-color:  #FFFFFF ;
   max-height: 80%;
 }
-
 .content-two {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2;  grid-row: 1;
   border-right-style: solid;
   border-width: 3px;
-  border-color: #FFFFFF;
+  border-color:  #FFFFFF ;
   max-height: 80%;
 }
-
-.content-three {
-  grid-column: 3;
-  grid-row: 1;
-  max-height: 80%;
-}
-
-.subcontent {
+.content-three {  grid-column: 3;  grid-row: 1;   max-height: 80%;}
+.subcontent{
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 50% 50%;
 }
-
 /*# sourceMappingURL=general.css.map */
-#content {
+
+#content{
   /*position: relative;*/
   padding: 15px 0px 15px 0px;
-  background: #37383e;
+  background:  #37383e;
 }
 
-#administration .icon-admin {
-  background-image: url("../medias/block/news-module/button.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-color: transparent;
-  border: none;
-  width: 88.9px;
-  height: 77px;
+
+
+// Clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
-.modal {
+//modal
+
+#administration{
+    .icon-admin{
+        background-image: url("../medias/block/news-module/button.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        width: 88.9px;
+        height: 77px;
+    }
+}
+
+
+.modal{
   border-radius: 10px;
 }
 
@@ -116,11 +121,12 @@ h1 {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, .65);
   display: none;
-}
-.body-blackout.is-blacked-out {
-  display: block;
+
+  &.is-blacked-out {
+    display: block;
+  }
 }
 
 .popup-trigger {
@@ -128,33 +134,36 @@ h1 {
 }
 
 .popup-modal {
+  //min-height: 365px;
   min-width: 650px;
   background-color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  //padding: 45px;
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in-out;
   z-index: 1011;
+
   border-radius: 10px;
-}
-.popup-modal.is--visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-.popup-modal__close {
-  position: absolute;
-  font-size: 1.2rem;
-  right: 5px;
-  top: 5px;
-  cursor: pointer;
+
+  &.is--visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &__close {
+    position: absolute;
+    font-size: 1.2rem;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
 }
 
-.popup-modal__close {
+.popup-modal__close{
   width: 25px;
   height: 25px;
 }
-
-/*# sourceMappingURL=general.css.map */
