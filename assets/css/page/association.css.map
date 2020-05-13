@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "association.scss"
-    ],
-    "names": [],
-    "file": "association.css"
-}
+{"version":3,"sourceRoot":"","sources":["association.scss"],"names":[],"mappings":"AACA;AACA;AACE;EACA;EACA;EACA;AACA;EACA;EACA;;;AAEF;AACA;EACE;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AAGF;EACE;;;AAGF;AACA;EACE;EACA;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;;;AAEF;EAAY;EAAiB;;;AAC7B;EAAY;EAAiB;;;AAC7B;EAAc;EAAiB","file":"association.css"}
