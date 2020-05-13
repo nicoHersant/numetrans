@@ -29,13 +29,14 @@
   display: grid;
   grid-gap: 2%;
   grid-template-columns: 50% 50%;
+  padding : 0px 15px 0px 15px;
 }
 .subone{ grid-column: 1;  grid-row: 1; }
 
 .subtwo{ grid-column: 2;  grid-row: 1; padding-top:10px}
 
 .zonetxt {
-  width: 282px;
+  width: 300px;
   height: 31px;
   margin-bottom: 20px;
   background: #FFFFFF;
@@ -44,7 +45,7 @@
 }
 
 .zone-message {
-  width: 282px;
+  width: 300px;
   height: 90px;
   background: #FFFFFF;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.75);
@@ -73,7 +74,6 @@
   font-size: 18px;
   line-height: 21px;
   border:none;
-
   color: #FFFFFF;
 }
 .btnEnvoyer:hover {
