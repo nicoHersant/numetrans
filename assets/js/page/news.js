@@ -180,6 +180,7 @@
                                                 log_news_module.innerHTML = response.info;
                                                 if (response.success){
                                                     log_news_module.classList.add("success");
+                                                    document.location.reload(true);
                                                 }
                                             }
                                         }
@@ -205,6 +206,7 @@
                                             log_news_module.innerHTML = response.info;
                                             if (response.success){
                                                 log_news_module.classList.add("success");
+                                                document.location.reload(true);
                                             }
                                         }
                                     }
