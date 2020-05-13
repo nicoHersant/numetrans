@@ -29,20 +29,6 @@
   grid-column: 2;
   grid-row: 2;
 }
-/* Gestion des background de zone de clic des équipes */
-/*.tech {
-  background-image: url("../../medias/page/esport/BANNER_tech.jpg");
-  width:50%;
-}
-.fs2 {
-  background-image: url("../../medias/page/esport/BANNER_fs2.jpg");
-}
-.dirt {
-  background-image: url("../../medias/page/esport/BANNER_dirt.jpg");
-}
-.aca {
-  background-image: url("../../medias/page/esport/BANNER_aca.jpg");
-}*/
 
 .imgprofile {
   background-image: url("../../medias/page/esport/AVI.jpg");
@@ -50,10 +36,8 @@
   height:100%;
 }
 
-
-
 /* Juste des éléments de style, fonctionne sans cette partie */
-
+/*
 details {
   margin-bottom: 20px;
   width: 100%;
@@ -89,11 +73,11 @@ details summary::-webkit-details-marker {
 
 summary {
   height: 250px;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
+  -webkit-user-select: none; // Safari
+  -moz-user-select: none; // Firefox
+  -ms-user-select: none; // IE10+/Edge
+  user-select: none; // Standard
+}*/
 
 
 .container {
