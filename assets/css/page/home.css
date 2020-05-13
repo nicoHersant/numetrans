@@ -1,25 +1,19 @@
-<<<<<<< HEAD
-
 /* No CSS *//*# sourceMappingURL=home.css.map */
-<<<<<<< HEAD
-=======
+
 .swipe {
-    overflow: hidden;
-    visibility: hidden;
-    position: relative;
-  }
-  .swipe-wrap {
-    overflow: hidden;
-    position: relative;
-  }
-  .swipe-wrap > div {
-    float:left;
-    width:100%;
-    position: relative;
-  }
-  /* No CSS *//*# sourceMappingURL=home.css.map */
->>>>>>> valentin1
-=======
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
 
 /***************** card items *********************/
 .card {
@@ -71,4 +65,3 @@
 .sub-one {  grid-column: 1;  grid-row: 1;}
 .sub-two {  grid-column: 2;  grid-row: 1;}
 .sub-three {  grid-column: 3;  grid-row: 1;}
->>>>>>> ad78effd9b334352e41bc55b34ec227f05cce226
