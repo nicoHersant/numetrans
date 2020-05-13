@@ -1,6 +1,9 @@
 body .ta-center {
   text-align: center;
 }
+body {
+  margin: 0;
+}
 h1{
   text-align: center;
   color: rgb(249, 109, 0);
@@ -8,9 +11,8 @@ h1{
   font-weight: bold;
   font-size: 42px;
 }
-#content{
-  padding: 15px;
-}
+
+/* header properties */
 .topnav-right {
   float: right;
 }
@@ -40,7 +42,6 @@ h1{
   grid-gap: 1%;
   grid-template-columns: 33% 33% 33%;
   margin: 5% 10% 5% 10%;
-  padding: 3%;
   width: auto;
   height: 150px;
   background-image:linear-gradient(to right, #0D0E14, #FF8A00);
@@ -69,12 +70,11 @@ h1{
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 50% 50%;
-  margin: ;
-  padding: ;
 }
 /*# sourceMappingURL=general.css.map */
 
 #content{
   /*position: relative;*/
-  background: linear-gradient(180deg, #37383e  10%, rgba(75, 75, 75, 0) 39.58%, rgba(51, 51, 51, 0.316832) 64.9%, rgba(40, 39, 37, 0.47) 101.31%), #4B4B4B;
+  padding: 15px 0px 15px 0px;
+  background:  #37383e;
 }

@@ -37,7 +37,7 @@
   border-radius: 0.25rem;
 }
 #news-module textarea {
-  width: 100%;
+  width: calc(100% - 25px);
   height: 200px;
   resize: none;
 }
