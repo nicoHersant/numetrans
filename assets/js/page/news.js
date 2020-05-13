@@ -1,6 +1,6 @@
 (function() {
     //slider news
-    var ob = activeSlider("slider-news", true);
+    var ob = activateSlider("slider-news", true);
 
     var icon_sliders_prev = document.querySelectorAll("#new-news .slider-prev");
     icon_sliders_prev.forEach((item, index) => {
@@ -19,7 +19,7 @@
     });
 
     //slider news
-    var ob2 = activeSlider("slider-archived-news", true);
+    var ob2 = activateSlider("slider-archived-news", true);
 
     var icon_sliders_archived_prev = document.querySelectorAll("#archived-news .slider-prev");
     icon_sliders_archived_prev.forEach((item, index) => {
