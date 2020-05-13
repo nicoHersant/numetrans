@@ -5,6 +5,8 @@
             Éditer une news
         {% elseif action == "archive" %}
             Archiver une news
+        {% elseif action == "reactivate" %}
+            Réactiver une news
         {% else %}
             Créer une news
         {% endif %}
@@ -12,6 +14,8 @@
     <form enctype="multipart/form-data" action="ajax/news-module.php" id="form-news-module" method="post">
         {% if action == 'archive' %}
             <p class="ta-center">Voulez-vous vraiment archiver cette évévenement ?</p>
+        {% elseif action == 'reactivate' %}
+            <p class="ta-center">Voulez-vous vraiment réactiver cette évévenement ?</p>
         {% else %}
             <div>
                 <p>Titre</p>

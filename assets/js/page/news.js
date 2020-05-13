@@ -1,8 +1,8 @@
 (function() {
-    //slider
+    //slider news
     var ob = activeSlider("slider-news", true);
 
-    var icon_sliders_prev = document.querySelectorAll(".slider-prev");
+    var icon_sliders_prev = document.querySelectorAll("#new-news .slider-prev");
     icon_sliders_prev.forEach((item, index) => {
         item.addEventListener("click", function(e){
             e.preventDefault();
@@ -10,11 +10,30 @@
         });
     });
 
-    var icon_sliders_next = document.querySelectorAll(".slider-next");
+    var icon_sliders_next = document.querySelectorAll("#new-news .slider-next");
     icon_sliders_next.forEach((item, index) => {
         item.addEventListener("click", function(e){
             e.preventDefault();
             ob.next();
+        });
+    });
+
+    //slider news
+    var ob2 = activeSlider("slider-archived-news", true);
+
+    var icon_sliders_archived_prev = document.querySelectorAll("#archived-news .slider-prev");
+    icon_sliders_archived_prev.forEach((item, index) => {
+        item.addEventListener("click", function(e){
+            e.preventDefault();
+            ob2.prev();
+        });
+    });
+
+    var icon_sliders_archived_next = document.querySelectorAll("#archived-news .slider-next");
+    icon_sliders_archived_next.forEach((item, index) => {
+        item.addEventListener("click", function(e){
+            e.preventDefault();
+            ob2.next();
         });
     });
 
@@ -25,6 +44,10 @@
     modalTriggers.forEach(trigger => {
         trigger.addEventListener('click', () => {
             const popupModal = document.querySelector("#modal");
+
+            //taille dynamique pour le masquage modal
+            var height_blackout = document.querySelector("body").offsetHeight;
+            document.querySelector(".body-blackout").style.height = height_blackout+"px";
 
             popupModal.classList.add('is--visible');
             bodyBlackout.classList.add('is-blacked-out');
@@ -53,7 +76,7 @@
                     if (this.response){
                         document.querySelector("#data-modal").innerHTML = this.response;
                         //
-                        if (action !== "archive"){
+                        if (action !== "archive" && action !== "reactivate"){
                             var news_module = document.querySelectorAll(".image-placement");
                             var image_news = document.querySelector("input[name='image-placement']:checked").value;
 
@@ -101,7 +124,7 @@
                                     title.classList.add("b-success");
                                 }
 
-                                if ((!image_value || image_value.length === 0 || !image_value.trim()) && action === null){
+                                if ((!image_value || image_value.length === 0 || !image_value.trim()) && (!action || action === "edit")){
                                     error.push("image");
                                 }
                                 else if(action !== null){
