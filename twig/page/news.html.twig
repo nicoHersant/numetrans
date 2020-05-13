@@ -20,20 +20,61 @@
                             <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
                         {% endif %}
                         <div class="slider-actions">
-                            <img src="assets/medias/page/news/new.png" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
                             <img src="assets/medias/page/news/modify.png" alt="edit icon" title="Editer une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="edit">
                             <img src="assets/medias/page/news/archive.svg" alt="archive icon" title="Archiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="archive">
                         </div>
-                        <div class="slider-buttons">
-                            <button class="slider-prev">Précèdent</button>
-                            <button class="slider-next">Suivant</button>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+
+    <div id="new-news">
+        {% if news is not empty and news|length > 1 %}
+            <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
+        {% endif %}
+        <img src="assets/medias/page/news/new.png" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
+        {% if news is not empty and news|length > 1 %}
+            <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
+        {% endif %}
+    </div>
+
+    {% if archived_news is not empty %}
+        <div id="slider-archived-news" class="swipe">
+            <div class="swipe-wrap">
+                {% for new in archived_news %}
+                    <div>
+                        {% if new.image_placement == 1 %}
+                            <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
+                            <p>{{ new.title }}</p>
+                            <p>{{ new.description }}</p>
+                        {% elseif new.image_placement == 2 or new.image_placement == 4 %}
+                            <p>{{ new.title }}</p>
+                            <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
+                            <p>{{ new.description }}</p>
+                        {% elseif new.image_placement == 3 %}
+                            <p>{{ new.title }}</p>
+                            <p>{{ new.description }}</p>
+                            <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
+                        {% endif %}
+                        <div class="slider-actions">
+                            <img src="assets/medias/page/news/reactivate.png" alt="edit icon" title="Réactiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="reactivate">
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
 
+        {% if archived_news|length > 1 %}
+            <div id="archived-news">
+                <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
+                <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
+            </div>
+        {% endif %}
     {% endif %}
+
+
 
     <div class="body-blackout"></div>
 
