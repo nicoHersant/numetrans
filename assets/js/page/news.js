@@ -1,6 +1,6 @@
 (function() {
     //slider
-    var ob = activeSlider("slider-news", true);
+    var ob = activateSlider("slider-news", true);
 
     var icon_sliders_prev = document.querySelectorAll(".slider-prev");
     icon_sliders_prev.forEach((item, index) => {
@@ -45,7 +45,7 @@
             let action = trigger.dataset.action;
 
             let httpRequest = new XMLHttpRequest();
-            httpRequest.open('GET', "block/news-module.php" + "?id-news="+id_news+"&action="+action);
+            httpRequest.open('GET', "functions/news-module.php" + "?id-news="+id_news+"&action="+action);
             httpRequest.send(null);
 
             httpRequest.onreadystatechange = function() {
@@ -147,7 +147,7 @@
 
                                 if (error.length === 0){
                                     let httpRequest = new XMLHttpRequest();
-                                    httpRequest.open('POST', "ajax/news-module.php");
+                                    httpRequest.open('POST', "functions/news-module.php");
                                     let formData = new FormData(document.querySelector('#form-news-module'));
 
                                     httpRequest.onreadystatechange = function() {
@@ -172,7 +172,7 @@
                                 let log_news_module = document.querySelector("#log-news-module");
 
                                 let httpRequest = new XMLHttpRequest();
-                                httpRequest.open('POST', "ajax/news-module.php");
+                                httpRequest.open('POST', "functions/news-module.php");
                                 let formData = new FormData(document.querySelector('#form-news-module'));
 
                                 httpRequest.onreadystatechange = function() {
