@@ -1,18 +1,36 @@
 <div id ="footer">
-  <div class)"footer-one">
-    <img id="logo" src ="assets/medias/block/header/logo.png" alt"logo numelops">
+
+  <div class)"footer-left">
     <p>Numelops, association de loi 1901 a but non lucratif.</a>
-  </div>
-
-  <div class)"footer-two">
     <h4>Ils nous font confiance :</h4>
-    <a id="logo1" href="index.php"><img id="logo" src ="assets/medias/block/header/logo.png" alt"logo"></a>
-    <a id="logo2" href="index.php"><img id="logo" src ="assets/medias/block/header/logo.png" alt"logo"></a>
-    <a id="logo3" href="index.php"><img id="logo" src ="assets/medias/block/header/logo.png" alt"logo"></a>
-    <a id="logo4" href="index.php"><img id="logo" src ="assets/medias/block/header/logo.png" alt"logo"></a>
+    <a  href="index.php">
+      <img src ="assets/medias/block/footer/CA_logo_80px.png" alt"logo Campus Academy" title"logo Campus Academy">
+    </a>
+    <a  href="index.php">
+      <img src ="assets/medias/block/footer/FSL_logo_80px.png" alt"logo FullSpeed League" title"logo FullSpeed League">
+    </a>
+    <a  href="index.php">
+      <img src ="assets/medias/block/footer/GA_JL_80px.png" alt"logo Gamers Assembly joueurs libres" title"logo Gamers Assembly joueurs libres">
+    </a>
   </div>
 
-  <div class)"footer-three">
+  <div class)"footer-right">
     <h4>Contactez-nous :</h4>
+    <form action="functions/mail.php" method="post">
+      <div class="subfooter">
+        <div class="subone">
+          <input class="zonetxt" type="text" placeholder="Votre nom" name="name" required size="10">
+          <input class="zonetxt" type="email" placeholder="Votre email" name="email" required size="10">
+          <textarea class="zone-message" placeholder="Votre message" name="message" rows="5" cols="33"></textarea>
+        </div>
+        <div class="subtwo">
+          <input class="coche" type="checkbox">
+          <label>Je reconnais avoir pris connaissance de la politique de confidentialité du site. En soumettant ce formulaire, j'accepte que les informations saisies soient utilisées afin de répondre à ma demande.</label>
+          <br>
+          <input class="btnEnvoyer" type="submit" value="ENVOYER">
+        </div>
+      </div>
+    </form>
   </div>
+
 </div>

@@ -1,3 +1,7 @@
 #errors logs
 [Thu Apr 30 14:14:49.156233 2020] [php7:error] [pid 24811] [client 127.0.0.1:34390] PHP Fatal error:  Uncaught Error: Class 'Twig\\Environment' not found in /var/www/html/numetrans/association.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/html/numetrans/association.php on line 3, referer: http://numv2.loc/
 [Thu Apr 30 14:15:16.599758 2020] [php7:error] [pid 24813] [client 127.0.0.1:34408] PHP Fatal error:  Uncaught Error: Class 'Twig\\Environment' not found in /var/www/html/numetrans/association.php:3\nStack trace:\n#0 {main}\n  thrown in /var/www/html/numetrans/association.php on line 3, referer: http://numv2.loc/
+[Wed May 13 16:38:38.105683 2020] [php7:error] [pid 877] [client 127.0.0.1:43284] script '/var/www/html/numetrans/mail.php' not found or unable to stat, referer: http://numv2.loc/index.php
+[Wed May 13 16:39:03.573074 2020] [php7:error] [pid 6522] [client 127.0.0.1:43288] script '/var/www/html/numetrans/mail.php' not found or unable to stat, referer: http://numv2.loc/index.php
+[Wed May 13 16:39:11.658873 2020] [php7:error] [pid 878] [client 127.0.0.1:43300] script '/var/www/html/numetrans/mail.php' not found or unable to stat, referer: http://numv2.loc/index.php
+[Wed May 13 16:39:48.074678 2020] [php7:error] [pid 4322] [client 127.0.0.1:43310] PHP Parse error:  syntax error, unexpected ',' in /var/www/html/numetrans/functions/mail.php on line 15, referer: http://numv2.loc/index.php
