@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+/* Footer */
+#footer {
+    background: linear-gradient(180deg, rgba(40, 39, 37, 0.91) 9.9%, #FF8A00 80%);
+    height: 80px;
+    padding: 10px 5px 10px 5px;
+    vertical-align: bottom ;
+
+}
+#footer p{
+  vertical-align: bottom ;
+}

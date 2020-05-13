@@ -1,21 +1,50 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
+    {% if news is not empty %}
+        <div id="slider-news" class="swipe">
+            <div class="swipe-wrap">
+                {% for new in news %}
+                    <div>
+                        {% if new.image_placement == 1 %}
+                            <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
+                            <p>{{ new.title }}</p>
+                            <p>{{ new.description }}</p>
+                        {% elseif new.image_placement == 2 or new.image_placement == 4 %}
+                            <p>{{ new.title }}</p>
+                            <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
+                            <p>{{ new.description }}</p>
+                        {% elseif new.image_placement == 3 %}
+                            <p>{{ new.title }}</p>
+                            <p>{{ new.description }}</p>
+                            <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
+                        {% endif %}
+                        <div class="slider-actions">
+                            <img src="assets/medias/page/news/new.png" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
+                            <img src="assets/medias/page/news/modify.png" alt="edit icon" title="Editer une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="edit">
+                            <img src="assets/medias/page/news/archive.svg" alt="archive icon" title="Archiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="archive">
+                        </div>
+                        <div class="slider-buttons">
+                            <button class="slider-prev">Précèdent</button>
+                            <button class="slider-next">Suivant</button>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
 
-    <div id="slider-news" class="swipe">
-      <div class="swipe-wrap">
-        <div><img src="assets/medias/page/association/afterwork1.jpg" alt="afterwork au new factory" width="100%"></div>
-        <div><img src="assets/medias/page/association/afterwork4.jpg" alt="afterwork au new factory" width="100%"></div>
-        <div><img src="assets/medias/page/association/gaming2.jpg" alt="construction d'une borne d'arcade" width="100%"></div>
-      </div>
+    {% endif %}
+
+    <div class="body-blackout"></div>
+
+    <div id="modal" class="popup-modal shadow">
+        <img src="assets/medias/page/news/close.png" alt="close icon" class="popup-modal__close">
+        <div id="data-modal"></div>
     </div>
-
-
 {% endblock %}
 
 {% block javascripts %}
-    <script type="text/javascript" src="assets/js/others/swipe.js"></script>
+    <script src="assets/js/swipe.js"></script>
     <script src="assets/js/others/slider.js"></script>
     {{ parent() }}
 {% endblock %}

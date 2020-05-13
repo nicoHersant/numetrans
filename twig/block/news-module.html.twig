@@ -1,35 +1,64 @@
 <link rel="stylesheet" href="assets/css/block/news-module.css">
 <div id="news-module">
-    <h2 class="ta-center">Créer une news</h2>
-    <div>
-        <p>Titre</p>
-        <input type="text" name="title" placeholder="Titre">
-        <p>Position de l'image</p>
-        <div id="radio-news-module">
+    <h2 class="ta-center">
+        {% if action == "edit" %}
+            Éditer une news
+        {% elseif action == "archive" %}
+            Archiver une news
+        {% else %}
+            Créer une news
+        {% endif %}
+    </h2>
+    <form enctype="multipart/form-data" action="ajax/news-module.php" id="form-news-module" method="post">
+        {% if action == 'archive' %}
+            <p class="ta-center">Voulez-vous vraiment archiver cette évévenement ?</p>
+        {% else %}
             <div>
-                <input type="radio" name="image-news" value="1" checked="checked">
-                <input type="radio" name="image-news" value="2">
-                <input type="radio" name="image-news" value="3">
-                <input type="radio" name="image-news" value="4">
+                <p>Titre</p>
+                <input type="text" name="title" placeholder="Titre"{% if news.title is not empty %} value="{{ news.title }}"{% endif %}>
+                <p>Image</p>
+                <input name="image" type="file"/>
+                {% if news.image is not empty %}
+                    <div class="edit-image">
+                        <p>{{ news.image }}</p>
+                        <img src="assets/medias/news/{{ news.image }}" alt="">
+                    </div>
+                {% endif %}
+
+                <p>Position de l'image</p>
+                <div id="radio-news-module">
+                    <div>
+                        <input type="radio" name="image-placement" value="1"{% if news.image_placement == 1 or action is empty or news == false %} checked="checked"{% endif %}>
+                        <input type="radio" name="image-placement" value="2"{% if news.image_placement == 2 %} checked="checked"{% endif %}>
+                        <input type="radio" name="image-placement" value="3"{% if news.image_placement == 3 %} checked="checked"{% endif %}>
+                        <input type="radio" name="image-placement" value="4"{% if news.image_placement == 4 %} checked="checked"{% endif %}>
+                    </div>
+
+                    <div>
+                        <div class="image-placement{% if news.image_placement == 1 or action is empty or news == false %} selected{% endif %}" data-value="1"></div>
+                        <div class="image-placement{% if news.image_placement == 2 %} selected{% endif %}" data-value="2"></div>
+                        <div class="image-placement{% if news.image_placement == 3 %} selected{% endif %}" data-value="3"></div>
+                        <div class="image-placement{% if news.image_placement == 4 %} selected{% endif %}" data-value="4"></div>
+                    </div>
+                </div>
             </div>
 
             <div>
-                <div class="image-news selected" data-value="1"></div>
-                <div class="image-news" data-value="2"></div>
-                <div class="image-news" data-value="3"></div>
-                <div class="image-news" data-value="4"></div>
+                <p>Description</p>
+                <textarea name="description" placeholder="Une description de votre news">{% if news.description is not empty %}{{ news.description }}{% endif %}</textarea>
             </div>
+        {% endif %}
+
+        <p id="log-news-module"></p>
+        <div class="ta-center">
+            {% if action is not empty %}
+                <input type="hidden" name="action" value="{{ action }}">
+            {% endif %}
+            {% if id_news is not empty %}
+                <input type="hidden" name="id-news" value="{{ id_news }}">
+            {% endif %}
+            <button type="button" id="button-news-module"></button>
         </div>
-    </div>
+    </form>
 
-    <div>
-        <p>Description</p>
-        <textarea name="text-news" placeholder="Une description de votre news"></textarea>
-    </div>
-    <p id="log-news-module"></p>
-    <div class="ta-center">
-        <button id="button-news-module"></button>
-    </div>
 </div>
-
-<script src="assets/js/block/news-module.js"></script>

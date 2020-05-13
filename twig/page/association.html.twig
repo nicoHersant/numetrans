@@ -1,16 +1,81 @@
 {% extends "base.html.twig" %}
 
-{% block content %}
-    <h1>{{ title }}</h1>
+{% block head %}
+    {{  parent() }}
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/css/page/association.css"/>
+{% endblock %}
 
-    <div id="slider-asso" class="swipe">
-      <div class="swipe-wrap">
-        <div><img src="assets/medias/page/association/team2.jpg" alt="les bénévoles fondateurs" width="100%"></div>
-        <div><img src="assets/medias/page/association/afterwork2.jpg" alt="afterwork au new factory" width="100%"></div>
-        <div><img src="assets/medias/page/association/gaming1.jpg" alt="nomade arcade lors de la spheriz cup" width="100%"></div>
-        <div><img src="assets/medias/page/association/podcave1.jpg" alt="visuel du podcast numelops" width="100%"></div>
+{% block content %}
+  <h1>{{ title }}</h1>
+
+  <div id="slider-asso" class="swipe">
+    <div class="swipe-wrap">
+      <div><img src="assets/medias/page/association/afterwork2.jpg" alt="afterwork au new factory" width="100%"></div>
+      <div><img src="assets/medias/page/association/gaming1.jpg" alt="nomade arcade lors de la spheriz cup" width="100%"></div>
+      <div><img src="assets/medias/page/association/podcave1.jpg" alt="visuel du podcast numelops" width="100%"></div>
+    </div>
+  </div>
+
+  <div id="association">
+
+    <div class="asso-wrapper">
+      <div class="card asso-card sub-one">
+        <img src="assets/medias/page/association/fsl20_cashprice.png" alt="annonce du cash price de la FSL 2020" >
+        <div class="container">
+          <h4><strong>150 euros de CashPrice !</strong></h4>
+          <p>La FSL 2020 organisée par Numelops en remplacement de la Gamers Assembly aura un Cash de 150€ fournit par l'association.</p>
+          <a href="#">Lire la suite...</a>
+        </div>
+      </div>
+      <div class="card asso-card sub-two">
+        <img src="assets/medias/page/association/numelops_lu.png" alt="principales équipes de Trackmania" >
+        <div class="container">
+          <h4><strong>Nos équipes Trackmania</strong></h4>
+          <p>L'écurie Numelops se compose désormais de trois équipes professionnelles, toutes composées de champions.</p>
+          <a href="#">Lire la suite...</a>
+        </div>
+      </div>
+      <div class="card asso-card sub-three">
+        <img src="assets/medias/page/association/numelops_lu.png" alt="skin 2019" >
+        <div class="container">
+          <h4><strong>Le dernier skin Numelops</strong></h4>
+          <p>Le skin officiel des équipe Numelops, réalisé par un artiste indépendant, UnknownGuy.</p>
+          <a href="#">Lire la suite...</a>
+        </div>
       </div>
     </div>
+
+    <div class="content asso-legal">
+      <div class="content-one ">
+        <h4 class="sub-one" >Bulletin d'adhésion</h4>
+        <a class="sub-two" href="assets/medias/page/association/Bulletin_dadhesion.pdf" target="_blanc"><img class="" src="assets/medias/block/content/num_logo_100px.png" alt="lien vers le Bulletin d'adhésion" title="lien vers le Bulletin d'adhésion"></a>
+      </div>
+      <div class="content-two ">
+        <h4 class="sub-one" >Statuts de l'Association</h4>
+        <a class="sub-two" href="assets/medias/page/association/Statuts-de-lassociation-Numelops.pdf" target="_blanc"><img class="" src="assets/medias/block/content/num_logo_100px.png" alt="lien vers les Statuts de l'Association" title="lien vers les Statuts de l'Association"></a>
+      </div>
+      <div class="content-three ">
+        <h4 class="sub-one" >Réglement intérieur</h4>
+        <a class="sub-two" href="assets/medias/page/association/Règlement_Intérieur_Numelops.pdf" target="_blanc"><img class="" src="assets/medias/block/content/num_logo_100px.png" alt="lien vers le réglement intérieur" title="lien vers le réglement intérieur"></a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-one">
+        <img class="sub-one" src="assets/medias/block/content/fsl_logo_100px.jpg" alt="logo FullSpeed League" title="FullSpeed League">
+      </div>
+      <div class="content-two">
+        <img class="sub-two" src="assets/medias/block/content/fsl_match2.jpeg" alt="résumé d'un match FSL 2020" title="#NumWin">
+      </div>
+      <div class="content-three ">
+        <h4 class="sub-one">Rejoignez notre Discord</h4>
+        <a class="sub-two" href="https://discord.gg/bt7JMq"><img class="" src="assets/medias/block/content/discord_logo.png" alt="logo Discord" title="Lien d'invitation vers notre discord"></a>
+      </div>
+    </div>
+
+
+
+  </div>
 
 {% endblock %}
 
