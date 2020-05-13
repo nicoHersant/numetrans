@@ -57,9 +57,14 @@ h1{
   display: grid;
   grid-gap: 7%;
   grid-auto-rows: minmax(100px, auto);
-  grid-auto-rows: minmax(10px, auto);
   margin: 5% 10% 5% 10%;
-  pading: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
 }
 .num-card a {
   color: #f96d00;
@@ -78,16 +83,9 @@ h1{
   grid-column: 3;
   grid-row: 1;
 }
-
 .container {
   padding: 0.5rem;
   color: #FFFFFF;
-  text-align: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
   height: inherit;
 }
 .container h4 {
@@ -97,50 +95,98 @@ h1{
   width: 100%;
   border-radius: 51px 51px 0px 0px;
 }
+@media only screen and (max-width: 720px) {
+  .card-wrapper {
+    display: grid;
+    grid-gap: 3%;
+    margin: 2% 7% 7% 7%;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sub-one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .sub-two {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .sub-three {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
 
-
-/* general properties for all 3-parts content div */
-.content {
+/* general properties for all 3-parts banner div */
+.banner {
+  margin-top: 10px;
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 33% 33% 33%;
-  margin: 5% 10% 5% 10%;
+  grid-template-rows: repeat(1, auto);
+  margin: 0% 10% 5% 10%;
   width: auto;
-  height: 150px;
+  height: auto;
   background-image: linear-gradient(to right, #0D0E14, #FF8A00);
   border-radius: 30px;
   color: white;
   vertical-align: middle;
   text-align: center;
 }
-.content-one {
-  vertical-align: sub;
+.banner-one {
   grid-column: 1;
   grid-row: 1;
-  border-right-style: solid;
-  border-width: 3px;
-  border-color: #FFFFFF;
   max-height: 80%;
+  padding: 0% 7% 7% 7%;
 }
-.content-two {
+.banner-two {
   grid-column: 2;
   grid-row: 1;
-  border-right-style: solid;
-  border-width: 3px;
-  border-color: #FFFFFF;
   max-height: 80%;
+  padding: 0% 7% 7% 7%;
 }
-
-.content-three {
+.banner-three {
   grid-column: 3;
   grid-row: 1;
   max-height: 80%;
+  padding: 0% 7% 7% 7%;
 }
-
-.subcontent {
+.subbanner {
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 50% 50%;
+}
+@media only screen and (max-width: 600px) {
+  .banner {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 100%;
+    grid-template-rows: 3;
+    margin: 0% 8% 5% 8%;
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to right, #0D0E14, #FF8A00);
+    border-radius: 30px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .banner-one {
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 80%;
+  }
+  .banner-two {
+    grid-column: 1;
+    grid-row: 2;
+    max-height: 80%;
+  }
+  .banner-three {
+    grid-column: 1;
+    grid-row: 3;
+    max-height: 80%;
+  }
 }
 
 
