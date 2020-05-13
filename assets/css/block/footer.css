@@ -1,6 +1,6 @@
 /* Footer */
 #footer {
-    background: linear-gradient(180deg, rgba(40, 39, 37, 0.91) 9.9%, #FF8A00 80%);
+    background: linear-gradient(180deg, rgba(40, 39, 37, 0.91) 25%, #FF8A00 80%);
     height: 80%;
     padding: 10px 5px 10px 5px;
     vertical-align: bottom ;
@@ -35,5 +35,3 @@
   grid-row: 1;
   max-height: 80%;
 }
-
-

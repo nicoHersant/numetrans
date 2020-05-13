@@ -11,12 +11,15 @@ h1{
   font-weight: bold;
   font-size: 42px;
 }
+#content {
+  padding: 15px 0px 15px 0px;
+  background:  #37383e;
+}
 
 /* header properties */
 .topnav-right {
   float: right;
 }
-
 .header {
   margin: 15px 10px 0px 0px;
 }
@@ -27,17 +30,74 @@ h1{
   visibility: hidden;
   position: relative;
 }
-
 .swipe-wrap {
   overflow: hidden;
   position: relative;
 }
-
 .swipe-wrap div {
   float: left;
   width: 100%;
   position: relative;
 }
+
+/***************** card items *********************/
+.card {
+  /* general properties */
+  width: 100%;
+  border-radius: 51px;
+  background: linear-gradient(180deg, #0D0E14 55%, #37383e 100%);
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-wrapper {
+  display: grid;
+  grid-gap: 7%;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(10px, auto);
+  margin: 5% 10% 5% 10%;
+  pading: 10px;
+}
+.num-card a {
+  color: #f96d00;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+.sub-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.sub-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.sub-three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.container {
+  padding: 0.5rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  height: inherit;
+}
+.container h4 {
+  color: #f96d00;
+}
+.card img {
+  width: 100%;
+  border-radius: 51px 51px 0px 0px;
+}
+
 
 /* general properties for all 3-parts content div */
 .content {
@@ -53,7 +113,6 @@ h1{
   vertical-align: middle;
   text-align: center;
 }
-
 .content-one {
   vertical-align: sub;
   grid-column: 1;
@@ -63,7 +122,6 @@ h1{
   border-color: #FFFFFF;
   max-height: 80%;
 }
-
 .content-two {
   grid-column: 2;
   grid-row: 1;
@@ -85,11 +143,5 @@ h1{
   grid-template-columns: 50% 50%;
 }
 
-/*# sourceMappingURL=general.css.map */
-#content {
-  /*position: relative;*/
-  padding: 15px 0px 15px 0px;
-  background:  #37383e;
-}
 
 /*# sourceMappingURL=general.css.map */
