@@ -15,7 +15,7 @@ $textError = "";
 $imageError = array();
 $imageTextError = "";
 
-if ($action !== "archive") {
+if ($action !== "archive" && $action !== "reactivate") {
     if (empty($title)) {
         $error[] = "titre";
     }
@@ -211,6 +211,37 @@ if (count($error) > 0) {
             echo json_encode(array(
                 "success" => true,
                 "info" => "Archivage effectué."
+            ));
+        } catch (Exception $e) {
+            echo json_encode(array(
+                "success" => false,
+                "info" => "Erreur PDO : " . $e->getMessage()
+            ));
+        }
+    }
+    elseif ($action === "reactivate")  {
+        try {
+            $today = date('Y-m-d H:i:s');
+            $reactivate = 1;
+
+            $stmt = $connexion->prepare("
+                        UPDATE news 
+                        SET 
+                            state = :state,
+                            modified_date = :modified_date,
+                            deleted_date = :deleted_date
+                        WHERE id_news = :id_news 
+                    ");
+            $stmt->bindParam(':state', $reactivate);
+            $stmt->bindParam(':modified_date', $today);
+            $stmt->bindValue(':deleted_date', NULL);
+            $stmt->bindParam(':id_news', $idNews);
+
+            $stmt->execute();
+
+            echo json_encode(array(
+                "success" => true,
+                "info" => "Réactivation effectué."
             ));
         } catch (Exception $e) {
             echo json_encode(array(
