@@ -38,21 +38,21 @@
     });
 
     //modal
-    const modalTriggers = document.querySelectorAll('.popup-trigger');
-    const bodyBlackout = document.querySelector('.body-blackout');
+    const modalTriggers = document.querySelectorAll('#content .popup-trigger');
+    const bodyBlackout = document.querySelector('#content .body-blackout');
 
     modalTriggers.forEach(trigger => {
         trigger.addEventListener('click', () => {
-            const popupModal = document.querySelector("#modal");
+            const popupModal = document.querySelector("#modal-news");
 
             //taille dynamique pour le masquage modal
             var height_blackout = document.querySelector("body").offsetHeight;
-            document.querySelector(".body-blackout").style.height = height_blackout+"px";
+            document.querySelector("#content .body-blackout").style.height = height_blackout+"px";
 
             popupModal.classList.add('is--visible');
             bodyBlackout.classList.add('is-blacked-out');
 
-            popupModal.querySelector('.popup-modal__close').addEventListener('click', () => {
+            popupModal.querySelector('#content .popup-modal__close').addEventListener('click', () => {
                 popupModal.classList.remove('is--visible');
                 bodyBlackout.classList.remove('is-blacked-out')
             });
@@ -74,19 +74,19 @@
             httpRequest.onreadystatechange = function() {
                 if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
                     if (this.response){
-                        document.querySelector("#data-modal").innerHTML = this.response;
+                        document.querySelector("#modal-news .data-modal").innerHTML = this.response;
                         //
                         if (action !== "archive" && action !== "reactivate"){
-                            var news_module = document.querySelectorAll(".image-placement");
-                            var image_news = document.querySelector("input[name='image-placement']:checked").value;
+                            var news_module = document.querySelectorAll("#modal-news .data-modal .image-placement");
+                            var image_news = document.querySelector("#modal-news .data-modal input[name='image-placement']:checked").value;
 
                             news_module.forEach((item, index) => {
                                 item.addEventListener("click", function(){
                                     let value = this.getAttribute("data-value");
                                     if (image_news !== value){
-                                        document.querySelector("input[name='image-placement'][value='"+value+"']").click();
+                                        document.querySelector("#modal-news .data-modal input[name='image-placement'][value='"+value+"']").click();
                                         this.classList.add("selected");
-                                        document.querySelector(".image-placement[data-value='"+image_news+"']").classList.remove("selected");
+                                        document.querySelector("#modal-news .data-modal .image-placement[data-value='"+image_news+"']").classList.remove("selected");
                                         image_news = value;
                                     }
                                 });
@@ -96,12 +96,12 @@
                                 e.preventDefault();
                                 let log_news_module = document.querySelector("#log-news-module");
 
-                                let title = document.querySelector("input[name='title']");
+                                let title = document.querySelector("#modal-news .data-modal input[name='title']");
                                 let title_value = title.value;
-                                let image = document.querySelector("input[name='image']");
+                                let image = document.querySelector("#modal-news .data-modal input[name='image']");
                                 let image_value = image.value;
-                                let placement_value = document.querySelector("input[name='image-placement']").value;
-                                let text = document.querySelector("textarea[name='description']");
+                                let placement_value = document.querySelector("#modal-news .data-modal input[name='image-placement']").value;
+                                let text = document.querySelector("#modal-news .data-modal textarea[name='description']");
                                 let text_value = text.value;
 
                                 let error = [];

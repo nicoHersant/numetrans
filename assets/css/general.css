@@ -47,7 +47,6 @@ h1 {
   grid-gap: 1%;
   grid-template-columns: 33% 33% 33%;
   margin: 5% 10% 5% 10%;
-
   width: auto;
   height: 150px;
   background-image: linear-gradient(to right, #0D0E14, #FF8A00);
@@ -92,7 +91,70 @@ h1 {
 #content {
   /*position: relative;*/
   padding: 15px 0px 15px 0px;
-  background:  #37383e;
+  background: #37383e;
+}
+
+#administration .icon-admin {
+  background-image: url("../medias/block/news-module/button.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  width: 88.9px;
+  height: 77px;
+}
+
+.modal {
+  border-radius: 10px;
+}
+
+.body-blackout {
+  position: absolute;
+  z-index: 1010;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+.body-blackout.is-blacked-out {
+  display: block;
+}
+
+.popup-trigger {
+  display: inline-block;
+}
+
+.popup-modal {
+  min-width: 650px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+  z-index: 1011;
+  border-radius: 10px;
+}
+.popup-modal.is--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup-modal__close {
+  position: absolute;
+  font-size: 1.2rem;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.popup-modal__close {
+  width: 25px;
+  height: 25px;
 }
 
 /*# sourceMappingURL=general.css.map */
