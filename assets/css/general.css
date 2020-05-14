@@ -3,11 +3,9 @@
 body .ta-center {
   text-align: center;
 }
-
 body {
   margin: 0;
 }
-
 h1 {
   text-align: center;
   color: #f96d00;
@@ -15,19 +13,9 @@ h1 {
   font-weight: bold;
   font-size: 42px;
 }
-
 #content {
   padding: 15px 0px 15px 0px;
   background: #37383e;
-}
-
-/* header properties */
-.topnav-right {
-  float: right;
-}
-
-.header {
-  margin: 15px 10px 0px 0px;
 }
 
 /* general properties for all sliders */
@@ -36,12 +24,10 @@ h1 {
   visibility: hidden;
   position: relative;
 }
-
 .swipe-wrap {
   overflow: hidden;
   position: relative;
 }
-
 .swipe-wrap div {
   float: left;
   width: 100%;
@@ -53,16 +39,14 @@ h1 {
   /* general properties */
   width: 100%;
   border-radius: 51px;
-  background: linear-gradient(180deg, #0D0E14 55%, #37383e 100%);
+  background: linear-gradient(to right, #0D0E14 55%, #37383e 80%);
   /* Add shadows to create the "card" effect */
   transition: 0.3s;
 }
-
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
 .card-wrapper {
   display: grid;
   grid-gap: 7%;
@@ -76,38 +60,20 @@ h1 {
   font-size: 20px;
   line-height: 28px;
 }
-
 .num-card a {
   color: #f96d00;
   text-decoration: none;
   vertical-align: bottom;
 }
-
-.sub-one {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.sub-two {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.sub-three {
-  grid-column: 3;
-  grid-row: 1;
-}
-
+.sub-one {  grid-column: 1;  grid-row: 1;}
+.sub-two {  grid-column: 2;  grid-row: 1;}
+.sub-three {  grid-column: 3;  grid-row: 1;}
 .container {
   padding: 0.5rem;
   color: #FFFFFF;
   height: inherit;
 }
-
-.container h4 {
-  color: #f96d00;
-}
-
+.container h4 {  color: #f96d00;}
 .card img {
   width: 100%;
   border-radius: 51px 51px 0px 0px;
@@ -122,21 +88,9 @@ h1 {
     font-size: 14px;
     line-height: 20px;
   }
-
-  .sub-one {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .sub-two {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .sub-three {
-    grid-column: 1;
-    grid-row: 3;
-  }
+  .sub-one {    grid-column: 1;    grid-row: 1;  }
+  .sub-two {    grid-column: 1;    grid-row: 2;  }
+  .sub-three {    grid-column: 1;    grid-row: 3;  }
 }
 /* general properties for all 3-parts banner div */
 .banner {
@@ -154,28 +108,24 @@ h1 {
   vertical-align: middle;
   text-align: center;
 }
-
 .banner-one {
   grid-column: 1;
   grid-row: 1;
   max-height: 80%;
   padding: 0% 7% 7% 7%;
 }
-
 .banner-two {
   grid-column: 2;
   grid-row: 1;
   max-height: 80%;
   padding: 0% 7% 7% 7%;
 }
-
 .banner-three {
   grid-column: 3;
   grid-row: 1;
   max-height: 80%;
   padding: 0% 7% 7% 7%;
 }
-
 .subbanner {
   display: grid;
   grid-gap: 1%;
@@ -197,19 +147,16 @@ h1 {
     vertical-align: middle;
     text-align: center;
   }
-
   .banner-one {
     grid-column: 1;
     grid-row: 1;
     max-height: 80%;
   }
-
   .banner-two {
     grid-column: 1;
     grid-row: 2;
     max-height: 80%;
   }
-
   .banner-three {
     grid-column: 1;
     grid-row: 3;
@@ -231,7 +178,6 @@ h1 {
 .modal {
   border-radius: 10px;
 }
-
 .body-blackout {
   position: absolute;
   z-index: 1010;
@@ -245,11 +191,9 @@ h1 {
 .body-blackout.is-blacked-out {
   display: block;
 }
-
 .popup-trigger {
   display: inline-block;
 }
-
 .popup-modal {
   min-width: 650px;
   background-color: #fff;
@@ -274,7 +218,6 @@ h1 {
   top: 5px;
   cursor: pointer;
 }
-
 .popup-modal__close {
   width: 25px;
   height: 25px;
