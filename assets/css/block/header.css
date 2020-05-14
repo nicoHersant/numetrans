@@ -19,7 +19,7 @@
 }
 
 #header nav a:hover, #header nav a:focus, #header nav a:active {
-    background-color: rgb(249, 109, 0, 0.5);
+  background-color: rgba(249, 109, 0, 0.7);
 }
 
 #logo {
