@@ -6,11 +6,26 @@
   margin: 5% 10% 5% 10%;
   pading: 10px;
 }
+
 .home-card a {
   color: #f96d00;
   text-decoration: none;
   vertical-align: bottom;
 }
-.sub-one {  grid-column: 1;  grid-row: 1;}
-.sub-two {  grid-column: 2;  grid-row: 1;}
-.sub-three {  grid-column: 3;  grid-row: 1;}
+
+.sub-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sub-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.sub-three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/*# sourceMappingURL=home.css.map */
