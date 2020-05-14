@@ -1,0 +1,50 @@
+@import "../variables";
+
+#administration-module {
+    background-color: $background;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    form {
+        input[type="text"], input[type="password"] {
+            padding: .375rem .75rem;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+        }
+
+        .b-error {
+            border: 1px solid red !important;
+        }
+
+        .b-success {
+            border: 1px solid green !important;
+        }
+
+        #log-administration-module {
+            color: red;
+            text-align: center;
+
+            &.success {
+                color: green;
+            }
+        }
+
+        div {
+            text-align: center;
+
+            button {
+                background-image: url("../../medias/block/news-module/button.png");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: contain;
+                background-color: transparent;
+                border: none;
+                width: 88.9px;
+                height: 77px;
+                margin: 20px 0;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

@@ -1,6 +1,18 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
+    <div id="new-news">
+        {% if news is not empty and news|length > 1 %}
+            <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
+        {% endif %}
+        {% if admin %}
+            <img src="assets/medias/page/news/new.png" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
+        {% endif %}
+        {% if news is not empty and news|length > 1 %}
+            <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
+        {% endif %}
+    </div>
+
     {% if news is not empty %}
         <div id="slider-news" class="swipe">
             <div class="swipe-wrap">
@@ -19,10 +31,12 @@
                             <p>{{ new.description }}</p>
                             <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
                         {% endif %}
-                        <div class="slider-actions">
-                            <img src="assets/medias/page/news/modify.png" alt="edit icon" title="Editer une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="edit">
-                            <img src="assets/medias/page/news/archive.svg" alt="archive icon" title="Archiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="archive">
-                        </div>
+                        {% if admin %}
+                            <div class="slider-actions">
+                                <img src="assets/medias/page/news/modify.png" alt="edit icon" title="Editer une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="edit">
+                                <img src="assets/medias/page/news/archive.svg" alt="archive icon" title="Archiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="archive">
+                            </div>
+                        {% endif %}
                     </div>
                 {% endfor %}
             </div>
@@ -30,17 +44,16 @@
     {% endif %}
 
 
-    <div id="new-news">
-        {% if news is not empty and news|length > 1 %}
-            <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
-        {% endif %}
-        <img src="assets/medias/page/news/new.png" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
-        {% if news is not empty and news|length > 1 %}
-            <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
-        {% endif %}
-    </div>
+
 
     {% if archived_news is not empty %}
+        {% if archived_news|length > 1 %}
+            <div id="archived-news">
+                <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
+                <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
+            </div>
+        {% endif %}
+
         <div id="slider-archived-news" class="swipe">
             <div class="swipe-wrap">
                 {% for new in archived_news %}
@@ -66,21 +79,16 @@
             </div>
         </div>
 
-        {% if archived_news|length > 1 %}
-            <div id="archived-news">
-                <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
-                <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
-            </div>
-        {% endif %}
+
     {% endif %}
 
 
 
     <div class="body-blackout"></div>
 
-    <div id="modal" class="popup-modal shadow">
+    <div id="modal-news" class="modal popup-modal shadow">
         <img src="assets/medias/page/news/close.png" alt="close icon" class="popup-modal__close">
-        <div id="data-modal"></div>
+        <div class="data-modal"></div>
     </div>
 {% endblock %}
 

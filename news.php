@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+$admin = false;
+if (isset($_SESSION['admin'])){
+    $admin = true;
+}
 
 require_once 'vendor/autoload.php';
 
@@ -28,9 +34,12 @@ $stmt = $connexion->query("
 $news = $stmt->fetchAll();
 
 // archived news
-$dateArchive = date("Y-m-d", strtotime("-2 months"));
+$archivedNews = array();
 
-$stmt = $connexion->prepare("
+if ($admin){
+    $dateArchive = date("Y-m-d", strtotime("-2 months"));
+
+    $stmt = $connexion->prepare("
     SELECT 
         id_news,
         creation_date, 
@@ -45,17 +54,20 @@ $stmt = $connexion->prepare("
     ORDER BY creation_date
 ");
 
-$stmt->execute(
-    array(
-        'date_archive' => $dateArchive
-    )
-);
+    $stmt->execute(
+        array(
+            'date_archive' => $dateArchive
+        )
+    );
 
-$archivedNews = $stmt->fetchAll();
+    $archivedNews = $stmt->fetchAll();
+}
+
 //
 
 
 $data = array(
+    "admin" => $admin,
     "page" => "news",
     "news" => $news,
     "archived_news" => $archivedNews,

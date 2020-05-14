@@ -75,11 +75,11 @@
         display: inline-block;
         margin: 20px;
         cursor: pointer;
-        &:nth-child(2){
+        &:not(.slider-next):not(.slider-prev){
             width: 100px;
             height: 100px;
         }
-        &:nth-child(3){
+        &.slider-next{
             transform: rotate(180deg);
         }
     }
@@ -93,7 +93,7 @@
         display: inline-block;
         margin: 20px;
         cursor: pointer;
-        &:nth-child(2){
+        &.slider-next{
             transform: rotate(180deg);
         }
     }

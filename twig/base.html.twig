@@ -17,8 +17,23 @@
 <div id="content">
     {% block content %}{% endblock %}
 </div>
+<div id="administration">
+    {% if admin %}
+        <img src="assets/medias/page/button.png" alt="deconnexion icon" title="Deconnexion" class="icon-admin popup-trigger" data-action="deconnexion">
+    {% else %}
+        <img src="assets/medias/page/button.png" alt="connexion icon" title="Administration" class="icon-admin popup-trigger" data-action="connexion">
+    {% endif %}
+
+    <div class="body-blackout"></div>
+
+    <div id="modal-admin" class="modal popup-modal shadow">
+        <img src="assets/medias/page/close.png" alt="close icon" class="popup-modal__close">
+        <div class="data-modal"></div>
+    </div>
+</div>
 {% include 'block/footer.html.twig' %}
 
+<script src="assets/js/general.js"></script>
 {% block javascripts %}
     <script src="assets/js/page/{{ page }}.js"></script>
 {% endblock %}

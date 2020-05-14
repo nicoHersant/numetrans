@@ -1,0 +1,41 @@
+/* variables */
+#administration-module {
+  background-color: #ebebeb;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+#administration-module form input[type=text], #administration-module form input[type=password] {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+#administration-module form .b-error {
+  border: 1px solid red !important;
+}
+#administration-module form .b-success {
+  border: 1px solid green !important;
+}
+#administration-module form #log-administration-module {
+  color: red;
+  text-align: center;
+}
+#administration-module form #log-administration-module.success {
+  color: green;
+}
+#administration-module form div {
+  text-align: center;
+}
+#administration-module form div button {
+  background-image: url("../../medias/block/news-module/button.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  width: 88.9px;
+  height: 77px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=admin.css.map */
