@@ -1,0 +1,32 @@
+/* Only for styling, not required for it to work */
+section {
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 10% 3% 10%;
+    color: #fff;
+    font-size: 20px;
+}
+details {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+}
+details[open] summary {
+  border: 1px solid #f96d00;
+}
+summary {
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid #9fb6ce;
+    outline: none;
+    color: #f96d00;
+}
+
+summary:hover,
+summary:focus {
+    border: 2px solid #f96d00;
+}
