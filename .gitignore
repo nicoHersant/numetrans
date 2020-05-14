@@ -5,3 +5,4 @@ cache
 logs/access.log
 logs/errors.log
 docs/*
+functions/connexion.php
