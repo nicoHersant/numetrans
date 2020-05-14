@@ -1,0 +1,1 @@
+.home-wrapper{display:grid;grid-gap:7%;grid-auto-rows:minmax(100px, auto);margin:5% 10% 5% 10%;padding:10px}.home-card a{color:#f96d00;text-decoration:none;vertical-align:bottom}.sub-one{grid-column:1;grid-row:1}.sub-two{grid-column:2;grid-row:1}.sub-three{grid-column:3;grid-row:1}/*# sourceMappingURL=home.min.css.map */
