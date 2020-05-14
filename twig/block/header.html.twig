@@ -1,13 +1,33 @@
 <div id="header">
-  <a href="index.php"><img id="logo" src ="assets/medias/block/header/logo.png" alt"logo"></a>
-  <nav>
-      <a href="index.php">Home</a>
-      <a href="news.php">Actualités</a>
-      <a href="esport.php">Esport</a>
-      <a href="association.php">L'association</a>
-  </nav>
+    <a href="index.php"><img id="logo" src="assets/medias/block/header/logo.png" alt="logo"></a>
+    <div id="administration">
+        {% if admin %}
+            <img src="assets/medias/page/connexion.png" alt="deconnexion icon" title="Deconnexion"
+                 class="icon-connexion popup-trigger" data-action="deconnexion">
+        {% else %}
+            <img src="assets/medias/page/connexion.png" alt="connexion icon" title="Administration"
+                 class="icon-connexion popup-trigger" data-action="connexion">
+        {% endif %}
+
+        <div class="body-blackout"></div>
+
+        <div id="modal-admin" class="modal popup-modal shadow">
+            <img src="assets/medias/page/close.png" alt="close icon" class="popup-modal__close">
+            <div class="data-modal"></div>
+        </div>
+    </div>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="news.php">Actualités</a>
+        <a href="esport.php">Esport</a>
+        <a href="association.php">L'association</a>
+    </nav>
 </div>
 <div class="message">
-  <div class="reponse error {% if GET["status"] != "error" %}hidden{% endif %}">Désolé votre message n'a pas été envoyé. Vous pouvez contacter l'administrateur à cette adresse : numelops@gmail.com.</div>
-  <div class="reponse success {% if GET["status"] != "success" %}hidden{% endif %}">Votre message a bien été envoyé, l'équipe Numelops vous remercie.</div>
+    <div class="reponse error {% if GET["status"] != "error" %}hidden{% endif %}">Désolé votre message n'a pas été
+        envoyé. Vous pouvez contacter l'administrateur à cette adresse : numelops@gmail.com.
+    </div>
+    <div class="reponse success {% if GET["status"] != "success" %}hidden{% endif %}">Votre message a bien été envoyé,
+        l'équipe Numelops vous remercie.
+    </div>
 </div>
