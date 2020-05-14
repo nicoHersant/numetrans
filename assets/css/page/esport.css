@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
 .one {
   grid-column: 1;  grid-row: 1;
   vertical-align: sub;
@@ -11,12 +12,26 @@
   max-height: 100%;
   max-width: 100%;
 }
+
 .two {
   grid-column: 2;  grid-row: 1;
   width: 100%;
 }
+<<<<<<< HEAD
 .three {  grid-column: 1;  grid-row: 2;}
 .four {  grid-column: 2;  grid-row: 2;}
+=======
+
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+>>>>>>> origin/valentin1
 
 .imgprofile {
   background-image: url("../../medias/page/esport/AVI.jpg");
