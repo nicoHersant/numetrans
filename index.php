@@ -16,7 +16,8 @@ $twig = new \Twig\Environment($loader, [
 $data = array(
     "admin" => $admin,
     "title" => "Bienvenue sur le nouveau site de Numelops !",
-    "page" => "home"
+    "page" => "home",
+    "GET" => $_GET
 );
 
 echo $twig->render('page/home.html.twig', $data);
