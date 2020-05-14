@@ -216,6 +216,22 @@ h1 {
     max-height: 80%;
   }
 }
+#administration {
+  margin-left: 10px;
+  display: inline-block;
+  height: 100%;
+  float: right;
+}
+#administration .icon-connexion {
+  width: calc(88px / 2);
+  height: calc(98px / 2);
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 #administration .icon-admin {
   background-image: url("../medias/block/news-module/button.png");
   background-repeat: no-repeat;
