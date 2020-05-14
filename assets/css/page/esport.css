@@ -8,7 +8,6 @@
 .one {
   grid-column: 1;
   grid-row: 1;
-  vertical-align: sub;
 }
 
 .two {

@@ -6,13 +6,20 @@
 }
 .one {
   grid-column: 1;  grid-row: 1;
-  vertical-align: sub;
+  //vertical-align: sub;
 }
 .two {
-  grid-column: 2;  grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
 }
-.three {  grid-column: 1;  grid-row: 2;}
-.four {  grid-column: 2;  grid-row: 2;}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
 
 .image {
   display: block;
