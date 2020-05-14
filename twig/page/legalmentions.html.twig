@@ -1,0 +1,60 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+    <h1>{{ title }}</h1>
+
+    <section>
+        <details open>
+            <summary>Association loi 1901 : NUMELOPS</summary>
+            <p>
+              Nom de l’association : Numelops,<br>
+              Adresse : 15 rue de Nantes, app 304 44470 Thouaré sur Loire<br>
+              siret : 83764415200014<br>
+              Numéro de téléphone : 0641280501<br>
+              Directeur de la publication : Nicolas Hersant<br>
+              Email : nicolas.hersant@gmail.com
+            </p>
+        </details>
+
+        <details>
+            <summary>Hébergement</summary>
+            <p>
+              Ce site est hébergé par la société OVH, <br>
+              Siège social : 2 rue Kellermann – 59100 Roubaix – France
+            </p>
+        </details>
+
+        <details>
+            <summary>Données personnelles</summary>
+            <p>
+              <b>Aucune donnée personnelle n’est collectée par défault.</b><br><br>
+              Il est possible que nous recevions des données par l’intermédiaire de formulaires accessibles aux visiteurs.<br>
+               <b>Formulaire de contact</b><br>
+              – données collectées : Nom, prénom, email et texte du message.<br>
+              – finalités du traitement : communication avec le Bureau de Numelops ou demandes d’informations diverses.<br>
+              Les données collectées sont celles qui sont strictement nécessaires à la finalité du traitement.<br>
+              Elles sont transmises immédiatement par messagerie électronique et ne sont pas conservées sur le site ni dans la base de données.<br><br>
+              L’utilisateur est informé qu’il est pleinement responsable des données qu’il communique volontairement sur le présent site.<br> Notamment, que les données soumises ne doivent pas inclure de données personnelles sensibles telles que : mots de passe, identifiants gouvernementaux (comme les numéros de sécurité sociale, de permis de conduire, ou les numéros d’identification de contribuable), numéros de carte de crédit ou de compte bancaire, informations médicales, informations biométriques, opinions politiques ou religieuses, orientation sexuelle, données sur des condamnations.<br>
+              En soumettant des données au travers des différents formulaires de contacts, vous reconnaissez en avoir compris les finalités et consentir à leur traitement dans les conditions spécifiées ci-dessus.<br><br>
+              Par ailleurs, les données suivantes peuvent être collectées automatiquement dans les logs du fait de vos actions sur le site : Adresse IP source, URL de la page visitée, date et heure de la visite. Ces données ne sont pas exploitées, elles peuvent éventuellement être accessibles aux développeurs en cas de debugg.
+            </p>
+        </details>
+
+        <details>
+            <summary>Droit d’accès, de modification et de suppression</summary>
+            <p>
+              Vous disposez, conformément à l’article 34 de la loi « Informatique et Libertés » du 6 janvier 1978, d’un droit d’accès, de rectification, de modification et de suppression concernant les données qui vous concernent.<br>
+              Vous pouvez exercer ce droit en nous contactant par courrier électronique, postal ou par téléphone.
+            </p>
+        </details>
+
+
+
+    </section>
+
+
+
+    {% include 'block/banner.html.twig' %}
+
+{% endblock %}
