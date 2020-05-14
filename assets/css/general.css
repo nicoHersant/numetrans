@@ -1,28 +1,26 @@
 /* main code */
-body .ta-center {
-  text-align: center;
-}
-
 body {
   margin: 0;
+  font-family: arial;
+}
+body .ta-center {
+  text-align: center;
 }
 
 h1 {
   text-align: center;
   color: #f96d00;
-  font-family: arial;
   font-weight: bold;
   font-size: 42px;
 }
 
 #content {
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0 15px 0;
   background: #37383e;
 }
 
 .text-alone {
   color: white;
-  font-family: arial;
   font-size: 22px;
   margin: 2% 10% 3% 10%;
   padding: 5px 0px 5px 0px;
@@ -68,7 +66,6 @@ h1 {
   margin: 5% 10% 5% 10%;
   padding: 10px;
   text-align: center;
-  font-family: arial;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -108,7 +105,7 @@ h1 {
 
 .card img {
   width: 100%;
-  border-radius: 51px 51px 0px 0px;
+  border-radius: 51px 51px 0 0;
 }
 
 @media only screen and (max-width: 720px) {
@@ -138,12 +135,11 @@ h1 {
 }
 /* general properties for all 3-parts banner div */
 .banner {
-  margin-top: 10px;
   display: grid;
   grid-gap: 1%;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: repeat(1, auto);
-  margin: 0% 10% 5% 10%;
+  margin: 0 10% 5% 10%;
   width: auto;
   height: auto;
   background-image: linear-gradient(to right, #0D0E14, #FF8A00);
@@ -157,21 +153,21 @@ h1 {
   grid-column: 1;
   grid-row: 1;
   max-height: 80%;
-  padding: 0% 7% 7% 7%;
+  padding: 0 7% 7% 7%;
 }
 
 .banner-two {
   grid-column: 2;
   grid-row: 1;
   max-height: 80%;
-  padding: 0% 7% 7% 7%;
+  padding: 0 7% 7% 7%;
 }
 
 .banner-three {
   grid-column: 3;
   grid-row: 1;
   max-height: 80%;
-  padding: 0% 7% 7% 7%;
+  padding: 0 7% 7% 7%;
 }
 
 .subbanner {
@@ -185,8 +181,7 @@ h1 {
     display: grid;
     grid-gap: 1%;
     grid-template-columns: 100%;
-    grid-template-rows: 3;
-    margin: 0% 8% 5% 8%;
+    margin: 0 8% 5% 8%;
     width: auto;
     height: auto;
     background-image: linear-gradient(to right, #0D0E14, #FF8A00);
