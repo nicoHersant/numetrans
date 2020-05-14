@@ -3,13 +3,13 @@
 {% block content %}
     <div id="new-news">
         {% if news is not empty and news|length > 1 %}
-            <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
+            <img src="assets/medias/page/news/prev.webp" alt="" class="slider-prev">
         {% endif %}
         {% if admin %}
-            <img src="assets/medias/page/news/new.png" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
+            <img src="assets/medias/page/news/new.webp" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
         {% endif %}
         {% if news is not empty and news|length > 1 %}
-            <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
+            <img src="assets/medias/page/news/prev.webp" alt="" class="slider-next">
         {% endif %}
     </div>
 
@@ -33,7 +33,7 @@
                         {% endif %}
                         {% if admin %}
                             <div class="slider-actions">
-                                <img src="assets/medias/page/news/modify.png" alt="edit icon" title="Editer une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="edit">
+                                <img src="assets/medias/page/news/modify.webp" alt="edit icon" title="Editer une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="edit">
                                 <img src="assets/medias/page/news/archive.svg" alt="archive icon" title="Archiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="archive">
                             </div>
                         {% endif %}
@@ -49,8 +49,8 @@
     {% if archived_news is not empty %}
         {% if archived_news|length > 1 %}
             <div id="archived-news">
-                <img src="assets/medias/page/news/prev.png" alt="" class="slider-prev">
-                <img src="assets/medias/page/news/prev.png" alt="" class="slider-next">
+                <img src="assets/medias/page/news/prev.webp" alt="" class="slider-prev">
+                <img src="assets/medias/page/news/prev.webp" alt="" class="slider-next">
             </div>
         {% endif %}
 
@@ -72,7 +72,7 @@
                             <img src="assets/medias/news/{{ new.image }}" alt="news à propos de {{ new.title }}" class="image-placement-{{ new.image_placement }}">
                         {% endif %}
                         <div class="slider-actions">
-                            <img src="assets/medias/page/news/reactivate.png" alt="edit icon" title="Réactiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="reactivate">
+                            <img src="assets/medias/page/news/reactivate.webp" alt="edit icon" title="Réactiver une news" class="icon-news popup-trigger" data-id="{{ new.id_news }}" data-action="reactivate">
                         </div>
                     </div>
                 {% endfor %}
@@ -87,7 +87,7 @@
     <div class="body-blackout"></div>
 
     <div id="modal-news" class="modal popup-modal shadow">
-        <img src="assets/medias/page/news/close.png" alt="close icon" class="popup-modal__close">
+        <img src="assets/medias/page/news/close.webp" alt="close icon" class="popup-modal__close">
         <div class="data-modal"></div>
     </div>
 {% endblock %}

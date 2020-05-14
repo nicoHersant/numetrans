@@ -17,17 +17,17 @@
             margin: 0 20px 0 0;
             border: $secondary 2px solid;
             &:first-of-type{
-                background-image: url("../../medias/block/news-module/news-module-top.jpg");
+                background-image: url("../../medias/block/news-module/news-module-top.webp");
             }
             &:nth-of-type(2){
-                background-image: url("../../medias/block/news-module/news-module-right.jpg");
+                background-image: url("../../medias/block/news-module/news-module-right.webp");
             }
             &:nth-of-type(3){
-                background-image: url("../../medias/block/news-module/news-module-bot.jpg");
+                background-image: url("../../medias/block/news-module/news-module-bot.webp");
             }
             &:nth-of-type(4){
                 margin-right: 0;
-                background-image: url("../../medias/block/news-module/news-module-left.jpg");
+                background-image: url("../../medias/block/news-module/news-module-left.webp");
             }
             &.selected{
                 border: $primary 2px solid;
@@ -46,7 +46,7 @@
         resize: none;
     }
     button{
-        background-image: url("../../medias/block/news-module/button.png");
+        background-image: url("../../medias/block/news-module/button.webp");
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
