@@ -11,22 +11,17 @@ section {
     font-size: 20px;
 }
 details {
-    margin-bottom: 20px;
+    margin : 1% 2% 0% 2%;
     width: 100%;
-    padding: 20px;
+    padding: 1%;
 }
-details[open] summary {
-  border: 1px solid #f96d00;
+details p{
+    padding: 0% 2% 0% 2%;
 }
 summary {
     font-weight: bold;
     padding: 20px;
-    border: 1px solid #9fb6ce;
+    border: 1px solid #f96d00;
     outline: none;
     color: #f96d00;
-}
-
-summary:hover,
-summary:focus {
-    border: 2px solid #f96d00;
 }
