@@ -4,27 +4,15 @@
   display: grid;
   grid-template-columns: 50% 50%;
 }
-
 .one {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1;  grid-row: 1;
   vertical-align: sub;
 }
-
 .two {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2;  grid-row: 1;
 }
-
-.three {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.four {
-  grid-column: 2;
-  grid-row: 2;
-}
+.three {  grid-column: 1;  grid-row: 2;}
+.four {  grid-column: 2;  grid-row: 2;}
 
 .image {
   display: block;
@@ -36,7 +24,6 @@
   position: relative;
   width: 100%;
 }
-
 .containerEsport:hover .overlay {
   opacity: 1;
 }
@@ -101,6 +88,4 @@ height: 250px;
 -ms-user-select: none; // IE10+/Edge
 user-select: none; // Standard
 }*/
-/*# sourceMappingURL=esport.css.map */
-
 /*# sourceMappingURL=esport.css.map */
