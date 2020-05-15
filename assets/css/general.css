@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: arial;
+  heig: 100%;
 }
 body .ta-center {
   text-align: center;
