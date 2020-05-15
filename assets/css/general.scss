@@ -12,20 +12,25 @@ body {
 
 h1 {
     text-align: center;
-    color: #f96d00;
+    //color: #f96d00;
     font-weight: bold;
     font-size: 42px;
+    margin: 0;
+    padding: 60px 0;
 }
 
 #content {
-    padding: 15px 0 15px 0;
-    background: #37383e;
+    //padding: 15px 0 15px 0;
+    //background: #37383e;
+    background: #f9f9f9;
+    color: #373737;
+    padding-bottom: 100px;
 }
 .text-alone{
     color: white;
     font-size: 22px;
     margin: 2% 10% 3% 10%;
-    padding : 5px 0px 5px 0px;
+    padding : 5px 0 5px 0;
 }
 /* general properties for all sliders */
 .swipe {
@@ -143,11 +148,15 @@ h1 {
     margin: 0 10% 5% 10%;
     width: auto;
     height: auto;
-    background-image: linear-gradient(to right, #0D0E14, #FF8A00);
+    //background-image: linear-gradient(to right, #0D0E14, #FF8A00);
+    background: linear-gradient(180deg, #0D0E14 55%, #37383e 100%);
     border-radius: 30px;
     color: white;
     vertical-align: middle;
     text-align: center;
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 
 .banner-one {
@@ -185,11 +194,15 @@ h1 {
         margin: 0 8% 5% 8%;
         width: auto;
         height: auto;
-        background-image: linear-gradient(to right, #0D0E14, #FF8A00);
+        //background-image: linear-gradient(to right, #0D0E14, #FF8A00);
+        background: linear-gradient(180deg, #0D0E14 55%, #37383e 100%);
         border-radius: 30px;
         color: white;
         vertical-align: middle;
         text-align: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 
     .banner-one {
@@ -211,10 +224,10 @@ h1 {
     }
 }
 #administration {
-    margin-left: 10px;
     display: inline-block;
     height: 100%;
     float: right;
+    padding: 0 20px;
 }
 #administration .icon-connexion {
     width: calc(88px / 2);

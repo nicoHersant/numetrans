@@ -1,6 +1,7 @@
 /* Footer */
 #footer {
-    background: linear-gradient(180deg, #37383e 35%, #FF8A00 80%);
+    //background: linear-gradient(180deg, #37383e 35%, #FF8A00 80%);
+    background: linear-gradient(180deg, #0D0E14 55%, #37383e 100%);
     padding: 10px 5px 10px 5px;
     display: grid;
     grid-template-columns: 30% 30% 40%;
@@ -20,7 +21,7 @@
   border-right-style: solid;
   border-width: 3px;
   border-color: #FFFFFF;
-  max-height: 80%;
+  //max-height: 80%;
 }
 .footer-left img{  margin: 0 2% 0 2%;}
 .footer-central{
@@ -28,7 +29,7 @@
 }
 .footer-right {
   grid-column: 3;  grid-row: 1;
-  max-height: 80%;
+  //max-height: 80%;
   border-left: 3px solid #FFFFFF;
 }
 
@@ -42,11 +43,13 @@
 }
 
 .zone-message {
-  width: 600px;
+  //width: 600px;
+  width: calc(100% - 85px);
   height: 90px;
   background: #FFFFFF;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.75);
   border-radius: 9px;
+  margin-bottom: 10px;
 }
 
 .coche {

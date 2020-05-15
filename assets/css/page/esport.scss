@@ -6,19 +6,24 @@
 .esport-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin: 2% 5% 2% 5%;
 }
+
 .one {
-  grid-column: 1;  grid-row: 1;
-  //vertical-align: sub;
+  grid-column: 1;
+  grid-row: 1;
 }
+
 .two {
   grid-column: 2;
   grid-row: 1;
 }
+
 .three {
   grid-column: 1;
   grid-row: 2;
 }
+
 .four {
   grid-column: 2;
   grid-row: 2;
@@ -34,6 +39,7 @@
   position: relative;
   width: 100%;
 }
+
 .container-esport:hover .overlay {
   opacity: 1;
 }
@@ -60,3 +66,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+#team-esport{
+  margin-bottom: 100px;
+}
+
+/* sourceMappingURL=esport.css.map */
