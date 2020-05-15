@@ -137,8 +137,8 @@
                                     if (image_size > 2){
                                         image_error.push("l'image ne doit pas excéder 2mo");
                                     }
-                                    if (image_type !== "image/jpeg" && image_type !== "image/jpg" && image_type !== "image/png"){
-                                        image_error.push("uniquement les fichiers jpeg/jpg/png sont acceptés");
+                                    if (image_type !== "image/jpeg" && image_type !== "image/jpg" && image_type !== "image/png" && image_type !== "image/webp"){
+                                        image_error.push("uniquement les fichiers jpeg/jpg/png/webp sont acceptés");
                                     }
 
                                     image_text_error = image_error.join(', ');

@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 /* variables */
 /* variables */
+=======
+>>>>>>> develop
 /* main code */
 body {
   margin: 0;
   font-family: arial;
+<<<<<<< HEAD
+=======
+  heig: 100%;
+>>>>>>> develop
 }
 body .ta-center {
   text-align: center;
@@ -230,7 +237,11 @@ h1 {
 }
 
 #administration .icon-admin {
+<<<<<<< HEAD
   background-image: url("../medias/block/news-module/button.png");
+=======
+  background-image: url("../medias/block/news-module/button.webp");
+>>>>>>> develop
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -240,11 +251,19 @@ h1 {
   height: 77px;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 .modal {
   border-radius: 10px;
 }
 
+=======
+
+.modal {
+  border-radius: 10px;
+}
+
+>>>>>>> develop
 .body-blackout {
   position: absolute;
   z-index: 1010;
@@ -259,6 +278,7 @@ h1 {
 .body-blackout.is-blacked-out {
   display: block;
 }
+<<<<<<< HEAD
 
 .popup-trigger {
   display: inline-block;
@@ -295,5 +315,41 @@ h1 {
   width: 25px;
   height: 25px;
 }
+=======
+>>>>>>> develop
 
-/*# sourceMappingURL=general.css.map */
+.popup-trigger {
+  display: inline-block;
+}
+
+.popup-modal {
+  min-width: 650px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+  z-index: 1011;
+  border-radius: 10px;
+}
+
+.popup-modal.is--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-modal__close {
+  position: absolute;
+  font-size: 1.2rem;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.popup-modal__close {
+  width: 25px;
+  height: 25px;
+}

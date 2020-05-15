@@ -1,15 +1,19 @@
 {% extends "base.html.twig" %}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
 {% block content %}
 
     <h1>{{ title }}</h1>
 
     <div id="slider-esport" class="swipe">
       <div class="swipe-wrap">
-          <img src="assets/medias/page/association/skin1.png" alt="visuel des voitures numelops trackmania" width="100%">
+          <img src="assets/medias/page/association/skin1.webp" alt="visuel des voitures numelops trackmania" width="100%">
       </div>
     </div>
+<<<<<<< HEAD
     <div id="team-esport">
         <div class="esport-wrapper">
             <div class="one">
@@ -46,6 +50,36 @@
         </div>
     </div>
     </div>
+=======
+    <div id="team-esport" class="esport-wrapper">
+        <div class="one container-esport">
+            <img class="image" src="assets/medias/page/esport/BANNER_tech.webp" alt="visuel equipe tech">
+            <div class="overlay">
+                <p class="text">B1ts - Harni - Jaka - MathiCs - Racehans - Scary - Soulja - Wag - Zycos - Complex - Wtr - Jordy - Mawi</p>
+            </div>
+        </div>
+        <div class="two container-esport">
+            <img class="image" src="assets/medias/page/esport/BANNER_fs2.webp" alt="visuel equipe fullspeed">
+            <div class="overlay">
+                <p class="text"> Hunter - SinasAppel - DarkBringer - Craicy - Dan - Harry</p>
+            </div>
+        </div>
+        <div class="three container-esport">
+            <img class="image" src="assets/medias/page/esport/BANNER_dirt.webp" alt="visuel equipe dirt">
+            <div class="overlay">
+                <p class="text">Cocho - Fire</p>
+            </div>
+        </div>
+        <div class="four container-esport" >
+            <img class="image" src="assets/medias/page/esport/BANNER_aca.webp" alt="visuel equipe academy">
+            <div class="overlay">
+                <p class="text">Fenrir - Shadox - Aethal - Taxon - Hope - NicklasK - Cubi - Muffeyo</p>
+            </div>
+        </div>
+    </div>
+
+    {% include 'block/banner.html.twig' %}
+>>>>>>> develop
 
 {% endblock %}
 

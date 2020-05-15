@@ -6,4 +6,7 @@ logs/access.log
 logs/errors.log
 docs/*
 functions/connexion.php
+<<<<<<< HEAD
 assets/medias/news/*
+=======
+>>>>>>> develop

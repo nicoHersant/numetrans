@@ -1,4 +1,5 @@
 <div id="header">
+<<<<<<< HEAD
     <a href="index.php"><img id="logo" src="assets/medias/block/header/logo.png" alt="logo"></a>
     <div id="administration">
         {% if admin %}
@@ -6,13 +7,26 @@
                  class="icon-connexion popup-trigger" data-action="deconnexion">
         {% else %}
             <img src="assets/medias/page/connexion.png" alt="connexion icon" title="Administration"
+=======
+    <a href="index.php"><img id="logo" src="assets/medias/block/header/logo.webp" alt="logo"></a>
+    <div id="administration">
+        {% if admin %}
+            <img src="assets/medias/page/connexion.webp" alt="deconnexion icon" title="Deconnexion"
+                 class="icon-connexion popup-trigger" data-action="deconnexion">
+        {% else %}
+            <img src="assets/medias/page/connexion.webp" alt="connexion icon" title="Administration"
+>>>>>>> develop
                  class="icon-connexion popup-trigger" data-action="connexion">
         {% endif %}
 
         <div class="body-blackout"></div>
 
         <div id="modal-admin" class="modal popup-modal shadow">
+<<<<<<< HEAD
             <img src="assets/medias/page/close.png" alt="close icon" class="popup-modal__close">
+=======
+            <img src="assets/medias/page/close.webp" alt="close icon" class="popup-modal__close">
+>>>>>>> develop
             <div class="data-modal"></div>
         </div>
     </div>

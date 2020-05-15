@@ -227,6 +227,7 @@ h1 {
     transform: translateY(-50%);
 }
 #administration .icon-admin {
+<<<<<<< HEAD
     background-image: url("../medias/block/news-module/button.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -236,6 +237,17 @@ h1 {
     width: 88.9px;
     height: 77px;
     cursor: pointer;
+=======
+  background-image: url("../medias/block/news-module/button.webp");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  width: 88.9px;
+  height: 77px;
+  cursor: pointer;
+>>>>>>> develop
 }
 
 .modal {

@@ -26,7 +26,11 @@
   text-align: center;
 }
 #administration-module form div button {
+<<<<<<< HEAD
   background-image: url("../../medias/block/news-module/button.png");
+=======
+  background-image: url("../../medias/block/news-module/button.webp");
+>>>>>>> develop
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -37,5 +41,8 @@
   margin: 20px 0;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=admin.css.map */
+=======
+>>>>>>> develop

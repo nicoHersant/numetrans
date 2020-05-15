@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.banner{
+  margin-top: 30px;
+}
 /* Gestion des cases d'équipes */
 .esport-wrapper {
   display: grid;
@@ -15,11 +18,19 @@
 .three {
   grid-column: 1;
   grid-row: 2;
+<<<<<<< HEAD
 }
 .four {
   grid-column: 2;
   grid-row: 2;
 }
+=======
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+>>>>>>> develop
 
 .image {
   display: block;
@@ -48,7 +59,7 @@
 
 .text {
   color: black;
-  font-size: 20px;
+  font-size: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
