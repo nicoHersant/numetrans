@@ -2,7 +2,6 @@ composer.lock
 vendor
 cache
 .idea
-logs/access.log
-logs/errors.log
+logs/*
 docs/*
 functions/connexion.php
