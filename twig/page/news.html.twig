@@ -1,17 +1,23 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-<div id="new-news">
-    {% if news is not empty and news|length > 1 %}
-        <img src="assets/medias/page/news/prev.webp" alt="" class="slider-prev">
+    <h1>{{ title }}</h1>
+
+    <div id="new-news">
+        {% if news is not empty and news|length > 1 %}
+            <img src="assets/medias/page/news/prev.webp" alt="actualité précèdente" class="slider-prev">
+        {% endif %}
+        {% if admin %}
+            <img src="assets/medias/page/news/new.webp" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
+        {% endif %}
+        {% if news is not empty and news|length > 1 %}
+            <img src="assets/medias/page/news/prev.webp" alt="actualité suivante" class="slider-next">
+        {% endif %}
+    </div>
+
+    {% if news is empty %}
+        <p class="ta-center">Aucune actualité disponible</p>
     {% endif %}
-    {% if admin %}
-        <img src="assets/medias/page/news/new.webp" alt="edit icon" title="Créer une news" class="icon-news popup-trigger">
-    {% endif %}
-    {% if news is not empty and news|length > 1 %}
-        <img src="assets/medias/page/news/prev.webp" alt="" class="slider-next">
-    {% endif %}
-</div>
 
     {% if news is not empty %}
         <div id="slider-news" class="swipe">
@@ -43,14 +49,11 @@
         </div>
     {% endif %}
 
-
-
-
     {% if archived_news is not empty %}
         {% if archived_news|length > 1 %}
             <div id="archived-news">
-                <img src="assets/medias/page/news/prev.webp" alt="" class="slider-prev">
-                <img src="assets/medias/page/news/prev.webp" alt="" class="slider-next">
+                <img src="assets/medias/page/news/prev.webp" alt="actualité archivée précèdente" class="slider-prev">
+                <img src="assets/medias/page/news/prev.webp" alt="actualité archivée suivante" class="slider-next">
             </div>
         {% endif %}
 
@@ -78,10 +81,11 @@
                 {% endfor %}
             </div>
         </div>
-
-
     {% endif %}
 
+    {% if archvied_news is empty %}
+        <p class="ta-center">Aucune actualité archivée disponible</p>
+    {% endif %}
 
 
     <div class="body-blackout"></div>

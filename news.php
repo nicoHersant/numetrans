@@ -67,6 +67,7 @@ if ($admin){
 
 
 $data = array(
+    "title" => "Actualités",
     "admin" => $admin,
     "page" => "news",
     "news" => $news,
